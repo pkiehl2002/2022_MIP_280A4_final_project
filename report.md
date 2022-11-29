@@ -143,3 +143,13 @@ Bases preceding removed adapters:
   G: 20.7%
   T: 33.6%
   none/other: 0.0%
+
+## Step 5: Assembly
+
+spades.py   -o Paenibacillus_spades_assembly \
+   --pe1-1 Paenibacillus_Illumina_R1_trimmed.fastq \
+   --pe1-2 Paenibacillus_Illumina_R2_trimmed.fastq \
+   --nanopore Paenibacillus_Nanopore.fastq \
+   -m 24 -t 18
+   
+ Longest contig is 1144848 bases long. 
