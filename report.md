@@ -202,11 +202,16 @@ First 2500 bases of first contig
 
 ![Screenshot (16)](https://user-images.githubusercontent.com/116305887/204674769-b3439638-142e-4de6-91d7-44be05f47ae7.png)
 
-Middle bases from first contigs (lines 17015-17427 in Notepad++ (approximately bases 1,020,900 - 1,045,620))
+Middle bases from first contigs (lines 17015-17427 in Notepad++ (approximately bases 1,020,840 - 1,045,560))
 
 ![Screenshot (17)](https://user-images.githubusercontent.com/116305887/204676059-aed5529a-4aee-49c7-94f7-2b5f6218905c.png)
+
+Middle bases from first contig (lines 7227 - 7651 (approximately bases 433,560 - 459,000)
+
+![Screenshot (19)](https://user-images.githubusercontent.com/116305887/204676463-6ff340c9-d7cf-4cee-b750-4a418c7eeaf8.png)
 
 Contig #10
 
 ![Screenshot (18)](https://user-images.githubusercontent.com/116305887/204676092-6a87d752-50e3-4999-be40-1d032a0e7a08.png)
+
 
