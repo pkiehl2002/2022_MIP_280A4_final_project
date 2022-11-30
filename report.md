@@ -143,13 +143,70 @@ Bases preceding removed adapters:
   G: 20.7%
   T: 33.6%
   none/other: 0.0%
+ 
+## Step 5: Quality Check #2
 
-## Step 5: Assembly
+On Ubuntu: 
+
+fastqc Paenibacillus_Illumina_R1_trimmed.fastq
+
+fastqc Paenibacillus_Illumina_R2_trimmed.fastq
+
+On Terminal:
+
+cd .\Documents\
+
+sftp pkiehl@thoth01.cvmbs.colostate.edu
+
+cd final_project_MIP280A4
+
+get Paenibacillus_Illumina_R1_trimmed_fastqc.html
+
+get Paenibacillus_Illumina_R2_trimmed_fastqc.html
+
+## Step 6: Assembly
+
+On Ubuntu:
 
 spades.py   -o Paenibacillus_spades_assembly \
    --pe1-1 Paenibacillus_Illumina_R1_trimmed.fastq \
-   --pe1-2 Paenibacillus_Illumina_R2_trimmed.fastq \
+   --pe1-2  Paenibacillus_Illumina_R2_trimmed.fastq \
    --nanopore Paenibacillus_Nanopore.fastq \
    -m 24 -t 18
    
- Longest contig is 1144848 bases long. 
+ cd Paenibacillus_spades_assembly/
+
+seqtk seq -A contigs.fasta | head -2 > first_contig.fasta
+
+The first contig is 1144848 bases long. 
+
+On Terminal:
+
+cd .\Documents\
+
+sftp pkiehl@thoth01.cvmbs.colostate.edu
+
+cd final_project_MIP280A4
+
+cd Paenibacillus_spades_assembly
+
+get first_contig.fasta
+
+## Step 6: BLAST
+
+First 1000 bases of first contig
+
+![Screenshot (15)](https://user-images.githubusercontent.com/116305887/204674746-d5554458-ae9a-46ee-8324-7476411796d7.png)
+
+First 2500 bases of first contig
+
+![Screenshot (16)](https://user-images.githubusercontent.com/116305887/204674769-b3439638-142e-4de6-91d7-44be05f47ae7.png)
+
+Middle bases from first contigs (lines 17015-17427 in Notepad++ (approximately bases 1,020,900 - 1,045,620))
+
+![Screenshot (17)](https://user-images.githubusercontent.com/116305887/204676059-aed5529a-4aee-49c7-94f7-2b5f6218905c.png)
+
+Contig #10
+
+![Screenshot (18)](https://user-images.githubusercontent.com/116305887/204676092-6a87d752-50e3-4999-be40-1d032a0e7a08.png)
+
