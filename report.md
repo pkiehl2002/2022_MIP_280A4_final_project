@@ -210,9 +210,13 @@ Middle bases from first contig (lines 7227 - 7651 (approximately bases 433,560 -
 
 ![Screenshot (19)](https://user-images.githubusercontent.com/116305887/204676463-6ff340c9-d7cf-4cee-b750-4a418c7eeaf8.png)
 
-Middle bases from first contigs (lines 12000 - 12413 (approximately bases 719,940 - 744,720)
+Middle bases from first contigs (lines 12000 - 12413 (approximately bases 719,940 - 744,720))
 
 ![Screenshot (20)](https://user-images.githubusercontent.com/116305887/204677030-4872f9b2-58fe-4dfc-b506-45705abcae90.png)
+
+Last bases from first contigs (lines 18671 - 19082 (approximately bases 1,120,200 - 1,144,848))
+
+![Screenshot (21)](https://user-images.githubusercontent.com/116305887/204678163-c9cfeea8-eb4f-4bb3-bb97-0e245921b2f4.png)
 
 Contig #10
 
