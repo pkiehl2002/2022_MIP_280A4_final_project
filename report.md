@@ -194,6 +194,8 @@ get first_contig.fasta
 
 ## Step 6: BLAST
 
+try blastn too!
+
 First 1000 bases of first contig
 
 ![Screenshot (15)](https://user-images.githubusercontent.com/116305887/204674746-d5554458-ae9a-46ee-8324-7476411796d7.png)
@@ -643,3 +645,23 @@ yaml                      0.2.5                h7f98852_2    conda-forge
 zipp                      3.10.0             pyhd8ed1ab_0    conda-forge
 zlib                      1.2.13               h166bdaf_4    conda-forge
 zstd                      1.5.2                h6239696_4    conda-forge
+
+
+## Spades Assembly w/ Updated Nanopore
+spades.py   -o Paenibacillus_spades_assembly_2 \
+   --pe1-1 Paenibacillus_Illumina_R1_trimmed.fastq \
+   --pe1-2  Paenibacillus_Illumina_R2_trimmed.fastq \
+   --nanopore Paenibacillus_Nanopore.fastq.gz \
+   -m 24 -t 18
+   
+ Longest scaffold is 5045338 bases long.
+ 
+ ## Coverage Depth
+ 
+ samtools view -b Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam > Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam
+ 
+ samtools sort -T tmp -O 'bam' Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam  > Paenibacillus_Illumina_mapped_to_penny.sorted.bam
+   
+ samtools depth Paenibacillus_Illumina_mapped_to_penny.sorted.bam > Paenibacillus_Illumina_mapped_to_penny_sorted_depth
+ 
+
