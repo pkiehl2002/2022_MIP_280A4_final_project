@@ -218,6 +218,12 @@ Last bases from first contigs (lines 18671 - 19082 (approximately bases 1,120,20
 
 ![Screenshot (21)](https://user-images.githubusercontent.com/116305887/204678163-c9cfeea8-eb4f-4bb3-bb97-0e245921b2f4.png)
 
+Contig #2
+
+Middle bases (lines 19213-19638)
+
+![Screenshot (22)](https://user-images.githubusercontent.com/116305887/204949788-d1d6ba61-3f7c-4511-81a3-50750ba1dd98.png)
+ 
 Contig #10
 
 ![Screenshot (18)](https://user-images.githubusercontent.com/116305887/204676092-6a87d752-50e3-4999-be40-1d032a0e7a08.png)
