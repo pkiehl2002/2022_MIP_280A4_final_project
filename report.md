@@ -685,5 +685,17 @@ Contig #5
 Contig #6
 
 ![Screenshot (33)](https://user-images.githubusercontent.com/116305887/205127891-8c1d1835-a9bb-4e61-a020-85efd3874778.png)
+ 
+## Other
+ 
+conda install -c conda-forge -c bioconda bakta
+ 
+bakta --db ADD PATHWAY first_scaffold.fasta
+ 
+conda install -c bioconda quast
+
+quast.py scaffolds.fasta -o scaffolds_stats
+
+![Screenshot 2022-12-01 at 11 21 21 AM](https://user-images.githubusercontent.com/116305887/205130601-008d71a3-a453-43ee-bd61-136601f08b88.jpg)
 
 
