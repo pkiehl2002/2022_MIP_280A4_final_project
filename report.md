@@ -699,3 +699,11 @@ quast.py scaffolds.fasta -o scaffolds_stats
 ![Screenshot 2022-12-01 at 11 21 21 AM](https://user-images.githubusercontent.com/116305887/205130601-008d71a3-a453-43ee-bd61-136601f08b88.jpg)
 
 
+TODO:
+- annotate w/ Batka
+- map nanopore reads to scaffolds w/ minimap2
+conda install -c bioconda minimap2
+minimap2 -a -x map-ont Paenibacillus_spades_assembly_2/scaffolds.fasta Paenibacillus_Nanopore.fastq.gz > approx-mapping_new_nanopore_to_scaffold.sam
+
+- cool QC nanopore visualization
+- determine average coverage depth from Paenibacillus_Illumina_mapped_to_penny_sorted_depth
