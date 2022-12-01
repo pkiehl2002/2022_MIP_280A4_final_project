@@ -283,4 +283,4 @@ bowtie2 -x penny_scaffolds_index \
    --threads 8 \
    -S Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam
 
-
+https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
