@@ -224,8 +224,63 @@ Middle bases (lines 19213-19638)
 
 ![Screenshot (22)](https://user-images.githubusercontent.com/116305887/204949788-d1d6ba61-3f7c-4511-81a3-50750ba1dd98.png)
  
+Contig #3 
+
+Middle bases (lines 30590-31010)
+
+![Screenshot (23)](https://user-images.githubusercontent.com/116305887/204950331-38f9b22d-7d28-4ebc-906a-486c571f3f37.png)
+
+Contig #4
+
+Middle bases (lines 41530-41945)
+
+![Screenshot (24)](https://user-images.githubusercontent.com/116305887/204950684-8e5f6011-b762-4ea0-846c-9d7076362cdc.png)
+
+Contig #5
+
+Middle bases (lines 52668-53078)
+
+![Screenshot (25)](https://user-images.githubusercontent.com/116305887/204951120-94b2517d-932c-4c3c-8e86-39794616b0a9.png)
+
+Contigs #6
+
+Middle bases (lines 6337-63750)
+
+![Screenshot (26)](https://user-images.githubusercontent.com/116305887/204951215-90c3bdbd-6563-4d42-bb58-fcb2138f6481.png)
+
+Contig #7
+
+Middle bases (lines 72480-72900) 
+
+![Screenshot (27)](https://user-images.githubusercontent.com/116305887/204951728-51a908ec-4c1f-4a14-95c2-2ab5d640c349.png)
+
 Contig #10
 
 ![Screenshot (18)](https://user-images.githubusercontent.com/116305887/204676092-6a87d752-50e3-4999-be40-1d032a0e7a08.png)
+
+Scaffold #1
+
+Middle bases (lines 3600-4018)
+
+![Screenshot (28)](https://user-images.githubusercontent.com/116305887/204953497-dcd4bc81-3146-4f14-bdd5-3cf8c70fda8a.png)
+
+## Step ? Mapping Reads to Scaffolds
+
+bowtie2-build scaffolds.fasta penny_scaffolds_index 
+
+cd ..
+
+mv Paenibacillus_Illumina_R1_trimmed.fastq Paenibacillus_spades_assembly/
+ 
+mv Paenibacillus_Illumina_R2_trimmed.fastq Paenibacillus_spades_assembly/
+
+cd Paenibacillus_spades_assembly/
+  
+bowtie2 -x penny_scaffolds_index \
+   -1 Paenibacillus_Illumina_R1_trimmed.fastq \
+   -2 Paenibacillus_Illumina_R2_trimmed.fastq \
+   --no-unal \
+   --threads 8 \
+   -S Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam
 
 
