@@ -701,9 +701,27 @@ quast.py scaffolds.fasta -o scaffolds_stats
 
 TODO:
 - annotate w/ Batka
+conda install -c conda-forge -c bioconda bakta
+bakta --db /home/data_for_classes/bakta_database/db scaffolds.fasta
+amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderplus-db ?
 - map nanopore reads to scaffolds w/ minimap2
 conda install -c bioconda minimap2
 minimap2 -a -x map-ont Paenibacillus_spades_assembly_2/scaffolds.fasta Paenibacillus_Nanopore.fastq.gz > approx-mapping_new_nanopore_to_scaffold.sam
-
 - cool QC nanopore visualization
+conda install -c bioconda nanoplot
+NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
+file:///Users/pariskiehl/Desktop/CSUSemester3/NanoPlot-report.html
 - determine average coverage depth from Paenibacillus_Illumina_mapped_to_penny_sorted_depth
+
+samtools coverage Paenibacillus_Illumina_mapped_to_penny.sorted.bam
+
+![Screenshot 2022-12-01 at 6 36 56 PM](https://user-images.githubusercontent.com/116305887/205194996-009587b1-dc2d-4e76-b8d9-ac793793b21b.jpg)
+
+samtools view -b approx-mapping_new_nanopore_to_scaffold.sam > nanopore_mapped_to_scaffolds.bam
+
+samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam > nanopore_mapped_to_scaffolds_sorted.bam
+
+samtools coverage nanopore_mapped_to_scaffolds_sorted.bam  
+
+![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
+
