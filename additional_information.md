@@ -1,4 +1,4 @@
-## FASTQC Results
+## Pre-Trimming FASTQC Results
 
 Illumina R1 Quality
 
