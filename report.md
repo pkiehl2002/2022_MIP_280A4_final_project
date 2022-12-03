@@ -148,6 +148,8 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 ![Screenshot 2022-12-03 at 4 37 17 PM](https://user-images.githubusercontent.com/116305887/205466736-58c62a57-39aa-4f49-ab2f-b251d458de86.jpg)
 
+The BLAST results of the remaining scaffolds can be found in additional_information.md. 
+
 ## Step ? Mapping Reads to Scaffolds
 
 bowtie2-build scaffolds.fasta penny_scaffolds_index 
