@@ -1,3 +1,69 @@
+## FASTQC Results
+
+Illumina R1 Quality
+
+![Screenshot 2022-12-03 at 3 46 08 PM](https://user-images.githubusercontent.com/116305887/205465209-b6255dcb-affb-4264-99ec-465605a0fe2d.jpg)
+
+Illumina R2 Quality
+
+![Screenshot 2022-12-03 at 3 46 31 PM](https://user-images.githubusercontent.com/116305887/205465233-2810a8e3-e599-4fc5-b098-93cbaf83c2a7.jpg)
+
+Nanopore 1 Quality
+
+![Screenshot 2022-12-03 at 3 46 52 PM](https://user-images.githubusercontent.com/116305887/205465251-68d7fda4-330d-4def-871f-92017c613803.jpg)
+
+TODO Nanopore 2 Quality
+
+Illumina R1 Adapter Content Before Trimming
+
+![Screenshot 2022-12-03 at 3 47 47 PM](https://user-images.githubusercontent.com/116305887/205465284-746a7851-ce7c-478a-8e0c-f77e7877b22b.jpg)
+
+Illumina R2 Adapter Content Before Trimming
+
+![Screenshot 2022-12-03 at 3 48 06 PM](https://user-images.githubusercontent.com/116305887/205465295-f4bfc274-0181-499b-afa8-f3a2d25ac747.jpg)
+
+## Trimming Adapters Individual Reads Results
+
+=== First read: Adapter 1 ===
+
+Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 302507 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 26.2%
+  C: 20.1%
+  G: 20.4%
+  T: 33.2%
+  none/other: 0.0%
+  
+=== Second read: Adapter 2 ===
+
+Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 288766 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.7%
+  C: 20.0%
+  G: 20.7%
+  T: 33.6%
+  none/other: 0.0%
+
+## Post-Trimming FASTQC Reports
+
+Illumina R1 Adapter Content
+
+![Screenshot 2022-12-03 at 4 10 22 PM](https://user-images.githubusercontent.com/116305887/205465966-7e8a4cd3-2470-41de-afa1-774e92fce90e.jpg)
+
+Illumina R2 Adapter Content
+
+![Screenshot 2022-12-03 at 4 10 47 PM](https://user-images.githubusercontent.com/116305887/205465978-187eb06f-0ec0-45df-ad66-ff2cd49c4ae0.jpg)
+
 ## Packages in bio_tools conda environment 
 
 ```
@@ -713,72 +779,3 @@ zipp                      3.10.0             pyhd8ed1ab_0    conda-forge
 zlib                      1.2.13               h166bdaf_4    conda-forge
 
 zstd                      1.5.2                h6239696_4    conda-forge
-
-
-
-## FASTQC Results
-
-Illumina R1 Quality
-
-![Screenshot 2022-12-03 at 3 46 08 PM](https://user-images.githubusercontent.com/116305887/205465209-b6255dcb-affb-4264-99ec-465605a0fe2d.jpg)
-
-Illumina R2 Quality
-
-![Screenshot 2022-12-03 at 3 46 31 PM](https://user-images.githubusercontent.com/116305887/205465233-2810a8e3-e599-4fc5-b098-93cbaf83c2a7.jpg)
-
-Nanopore 1 Quality
-
-![Screenshot 2022-12-03 at 3 46 52 PM](https://user-images.githubusercontent.com/116305887/205465251-68d7fda4-330d-4def-871f-92017c613803.jpg)
-
-TODO Nanopore 2 Quality
-
-Illumina R1 Adapter Content Before Trimming
-
-![Screenshot 2022-12-03 at 3 47 47 PM](https://user-images.githubusercontent.com/116305887/205465284-746a7851-ce7c-478a-8e0c-f77e7877b22b.jpg)
-
-Illumina R2 Adapter Content Before Trimming
-
-![Screenshot 2022-12-03 at 3 48 06 PM](https://user-images.githubusercontent.com/116305887/205465295-f4bfc274-0181-499b-afa8-f3a2d25ac747.jpg)
-
-## Trimming Adapters Individual Reads Results
-
-=== First read: Adapter 1 ===
-
-Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 302507 times
-
-Minimum overlap: 3
-No. of allowed errors:
-1-9 bp: 0; 10-12 bp: 1
-
-Bases preceding removed adapters:
-  A: 26.2%
-  C: 20.1%
-  G: 20.4%
-  T: 33.2%
-  none/other: 0.0%
-  
-=== Second read: Adapter 2 ===
-
-Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 288766 times
-
-Minimum overlap: 3
-No. of allowed errors:
-1-9 bp: 0; 10-12 bp: 1
-
-Bases preceding removed adapters:
-  A: 25.7%
-  C: 20.0%
-  G: 20.7%
-  T: 33.6%
-  none/other: 0.0%
-
-## Post-Trimming FASTQC Reports
-
-Illumina R1 Adapter Content
-
-![Screenshot 2022-12-03 at 4 10 22 PM](https://user-images.githubusercontent.com/116305887/205465966-7e8a4cd3-2470-41de-afa1-774e92fce90e.jpg)
-
-Illumina R2 Adapter Content
-
-![Screenshot 2022-12-03 at 4 10 47 PM](https://user-images.githubusercontent.com/116305887/205465978-187eb06f-0ec0-45df-ad66-ff2cd49c4ae0.jpg)
-
