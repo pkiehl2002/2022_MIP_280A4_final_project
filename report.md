@@ -142,9 +142,9 @@ get first_scaffold.fasta
 
 ## Step 5: BLAST
 
-Scaffold #1
+Scaffold #1 from Notepad++ middle bases (lines 3600-4018)
 
-Middle bases (lines 3600-4018)
+Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0.  
 
 ![Screenshot (28)](https://user-images.githubusercontent.com/116305887/204953497-dcd4bc81-3146-4f14-bdd5-3cf8c70fda8a.png)
 
