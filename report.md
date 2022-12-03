@@ -1,52 +1,36 @@
 # MIP 280A4 Final Project 2022
 
-This report documents the final project I did for MIP 280A4, Microbial Sequence Analysis, in the fall of 2022.
+This report documents the final project I did for MIP 280A4, Microbial Sequence Analysis, in the fall of 2022. I analyzed a <em>Paenibacillus</em> genome with antimicrobial properties that was isolated from soil. I trimmed, assembled, mapped, and annotated this genome. Packages, figures, and extra data can be found in additional_information.md. This file is written in [Markdown format](https://www.markdownguide.org/basic-syntax/).  
 
-It is written in [Markdown format](https://www.markdownguide.org/basic-syntax/).  
-
-## Step 1: Thanksgiving Break
-
-I'm going to eat some delicous food
-
-## Step 2: Describe my project
-
-My project is about x y z and my dataset is from a b c.
-
-## Step 3: Quality Test
+## Step 1: Quality Test
+	
+This genome was sequenced using both Illumina and Nanopore technologies. Before I used this information to assemble the genome, I analyzed the quality of the data. 
+	
 On Ubuntu:
 
+```
+ssh pkiehl@thoth01.cvmbs.colostate.edu
 conda activate bio_tools
-
 cd /home/data_for_classes/2022_MIP_280A4/final_project_datasets
-
 cp Paenibacillus_Illumina_R1.fastq ~/final_project_MIP280A4
-
 cp Paenibacillus_Illumina_R2.fastq ~/final_project_MIP280A4/
-
 cp Paenibacillus_Nanopore.fastq ~/final_project_MIP280A4/
-
 cd ~/final_project_MIP280A4/
-
 fastqc Paenibacillus_Illumina_R1.fastq
-
 fastqc Paenibacillus_Illumina_R2.fastq
-
 fastqc Paenibacillus_Nanopore.fastq
-
+```
 
 On Terminal:
 
+```
 cd .\Documents\
-
 sftp pkiehl@thoth01.cvmbs.colostate.edu
-
 cd final_project_MIP280A4
-
 get Paenibacillus_Illumina_R1_fastqc.html
-
 get Paenibacillus_Illumina_R2_fastqc.html
-
 get Paenibacillus_Nanopore_fastqc.html
+```
 
 ## Step 4: Trim Adapters
 
