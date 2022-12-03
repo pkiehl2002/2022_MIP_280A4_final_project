@@ -1,6 +1,12 @@
-#Packages in environment at /home/pkiehl/miniconda3/envs/bio_tools:
-#
-# Name                    Version                   Build  Channel
+##Packages in bio_tools conda environment 
+
+```
+ssh pkiehl@thoth01.cvmbs.colostate.edu
+conda activate bio_tools
+conda list
+```
+
+#Name                    Version                   Build  Channel
 _libgcc_mutex             0.1                 conda_forge    conda-forge
 _openmp_mutex             4.5                       2_gnu    conda-forge
 _r-mutex                  1.0.1               anacondar_1    conda-forge
