@@ -32,12 +32,14 @@ get Paenibacillus_Illumina_R2_fastqc.html
 get Paenibacillus_Nanopore_fastqc.html
 ```
 
-## Step 4: Trim Adapters
+Specific data from FASTQC report can be found in additional_information.md. As expected, the nanopore quality was low. Also, the Illumina Universal Adapter sequence was found in the Illumina reads. The next step is to remove those adapters. 
+
+## Step 2: Trim Adapters
 
 The Illumina Universal Adapter sequence is AGATCGGAAGAG.
 
 On Ubuntu: 
-
+```
 cutadapt \
    -a AGATCGGAAGAG \
    -A AGATCGGAAGAG \
@@ -48,7 +50,7 @@ cutadapt \
    Paenibacillus_Illumina_R1.fastq \
    Paenibacillus_Illumina_R2.fastq \
    | tee cutadapt.log
- 
+```
 Results: 
 
 === Summary ===
@@ -71,35 +73,7 @@ Total written (filtered):    371,924,944 bp (92.2%)
   Read 1:   186,688,646 bp
   Read 2:   185,236,298 bp
 
-=== First read: Adapter 1 ===
-
-Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 302507 times
-
-Minimum overlap: 3
-No. of allowed errors:
-1-9 bp: 0; 10-12 bp: 1
-
-Bases preceding removed adapters:
-  A: 26.2%
-  C: 20.1%
-  G: 20.4%
-  T: 33.2%
-  none/other: 0.0%
-  
-=== Second read: Adapter 2 ===
-
-Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 288766 times
-
-Minimum overlap: 3
-No. of allowed errors:
-1-9 bp: 0; 10-12 bp: 1
-
-Bases preceding removed adapters:
-  A: 25.7%
-  C: 20.0%
-  G: 20.7%
-  T: 33.6%
-  none/other: 0.0%
+The results from the individual reads can be found in additional_information.md.
  
 ## Step 5: Quality Check #2
 
