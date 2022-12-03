@@ -56,21 +56,33 @@ Results:
 === Summary ===
 
 Total read pairs processed:            807,033
+
   Read 1 with adapter:                 302,507 (37.5%)
+  
   Read 2 with adapter:                 288,766 (35.8%)
 
 == Read fate breakdown ==
+
 Pairs that were too short:              14,956 (1.9%)
+
 Pairs written (passing filters):       792,077 (98.1%)
 
 Total basepairs processed:   403,516,500 bp
+
   Read 1:   201,758,250 bp
+  
   Read 2:   201,758,250 bp
+  
 Quality-trimmed:               9,926,093 bp (2.5%)
+
   Read 1:     1,945,257 bp
+  
   Read 2:     7,980,836 bp
+  
 Total written (filtered):    371,924,944 bp (92.2%)
+
   Read 1:   186,688,646 bp
+  
   Read 2:   185,236,298 bp
 
 The results from the individual reads can be found in additional_information.md.
