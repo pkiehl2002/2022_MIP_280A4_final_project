@@ -87,16 +87,19 @@ Total written (filtered):    371,924,944 bp (92.2%)
 
 The results from the individual reads can be found in additional_information.md.
  
-## Step 5: Quality Check #2
+## Step 3: Quality Check #2
 
 On Ubuntu: 
 
+```
 fastqc Paenibacillus_Illumina_R1_trimmed.fastq
 
 fastqc Paenibacillus_Illumina_R2_trimmed.fastq
+```
 
 On Terminal:
 
+```
 cd .\Documents\
 
 sftp pkiehl@thoth01.cvmbs.colostate.edu
@@ -106,6 +109,8 @@ cd final_project_MIP280A4
 get Paenibacillus_Illumina_R1_trimmed_fastqc.html
 
 get Paenibacillus_Illumina_R2_trimmed_fastqc.html
+```
+Trimming the adapters successfully removed the adapters. The specific FASTQC reports can be found in additional_information.md.
 
 ## Step 6: Assembly
 
