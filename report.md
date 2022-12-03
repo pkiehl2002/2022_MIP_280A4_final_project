@@ -287,8 +287,7 @@ bowtie2 -x penny_scaffolds_index \
 
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
-Conda environment bio_tools
-conda list
+
 
 
 
