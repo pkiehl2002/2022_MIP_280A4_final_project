@@ -146,7 +146,7 @@ Scaffold #1 from Notepad++ middle bases (lines 3600-4018)
 
 Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0.  
 
-![Screenshot (28)](https://user-images.githubusercontent.com/116305887/204953497-dcd4bc81-3146-4f14-bdd5-3cf8c70fda8a.png)
+![Screenshot 2022-12-03 at 4 37 17 PM](https://user-images.githubusercontent.com/116305887/205466736-58c62a57-39aa-4f49-ab2f-b251d458de86.jpg)
 
 ## Step ? Mapping Reads to Scaffolds
 
