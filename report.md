@@ -48,33 +48,6 @@ get Paenibacillus_Illumina_R2_fastqc.html
 
 get Paenibacillus_Nanopore_fastqc.html
 
-
-Results:
-
-file:///C:/Users/pkiehl/Documents/Paenibacillus_Illumina_R1_fastqc.html
-
-file:///C:/Users/pkiehl/Documents/Paenibacillus_Illumina_R2_fastqc.html
-
-file:///C:/Users/pkiehl/Documents/Paenibacillus_Nanopore_fastqc.html
-
-![Screenshot (5)](https://user-images.githubusercontent.com/116305887/204600864-f06b7506-b114-4e99-84cb-5de8820e2554.png)
-
-![Screenshot (7)](https://user-images.githubusercontent.com/116305887/204601143-26b328d0-3105-43cd-8d07-2940964f6950.png)
-
-![Screenshot (8)](https://user-images.githubusercontent.com/116305887/204601165-60756147-60db-40b6-af00-0df04a7a60b3.png)
-
-![Screenshot (9)](https://user-images.githubusercontent.com/116305887/204601198-53b5e5e7-ca06-4ef6-b7f6-b30055b59772.png)
-
-![Screenshot (10)](https://user-images.githubusercontent.com/116305887/204601215-5688c3b2-fd50-4075-94a5-ff910ff5b47f.png)
-
-![Screenshot (11)](https://user-images.githubusercontent.com/116305887/204601233-ade19dce-69d5-478d-ad96-69f3d06f51df.png)
-
-![Screenshot (12)](https://user-images.githubusercontent.com/116305887/204601249-9ccabee5-03ef-403c-9fd2-a5ab8bdb65f5.png)
-
-![Screenshot (13)](https://user-images.githubusercontent.com/116305887/204601267-e212db36-8a4f-4762-8b59-dcd2fffa73fd.png)
-
-![Screenshot (14)](https://user-images.githubusercontent.com/116305887/204601286-8641e13f-125f-44c2-bd1b-d33b530088ce.png)
-
 ## Step 4: Trim Adapters
 
 The Illumina Universal Adapter sequence is AGATCGGAAGAG.
