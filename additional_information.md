@@ -720,5 +720,34 @@ zstd                      1.5.2                h6239696_4    conda-forge
 
 Illumina R1 Quality
 
+![Screenshot 2022-12-03 at 3 46 08 PM](https://user-images.githubusercontent.com/116305887/205465209-b6255dcb-affb-4264-99ec-465605a0fe2d.jpg)
+
+Illumina R2 Quality
+
+![Screenshot 2022-12-03 at 3 46 31 PM](https://user-images.githubusercontent.com/116305887/205465233-2810a8e3-e599-4fc5-b098-93cbaf83c2a7.jpg)
+
+Nanopore 1 Quality
+
+![Screenshot 2022-12-03 at 3 46 52 PM](https://user-images.githubusercontent.com/116305887/205465251-68d7fda4-330d-4def-871f-92017c613803.jpg)
+
+TODO Nanopore 2 Quality
+
+Illumina R1 Adapter Content Before Trimming
+
+![Screenshot 2022-12-03 at 3 47 47 PM](https://user-images.githubusercontent.com/116305887/205465284-746a7851-ce7c-478a-8e0c-f77e7877b22b.jpg)
+
+Illumina R2 Adapter Content Before Trimming
+
+![Screenshot 2022-12-03 at 3 48 06 PM](https://user-images.githubusercontent.com/116305887/205465295-f4bfc274-0181-499b-afa8-f3a2d25ac747.jpg)
+
+Illumina R1 Adapter Content After Trimming
+
+![Screenshot 2022-12-03 at 3 48 32 PM](https://user-images.githubusercontent.com/116305887/205465308-a5343c62-b717-4e6a-81cf-3c94985c873c.jpg)
+
+Illumina R2 Adapter Content After Trimming
+
+![Screenshot 2022-12-03 at 3 49 03 PM](https://user-images.githubusercontent.com/116305887/205465327-55fa6746-e447-4645-a8f2-5bef032ea7db.jpg)
+
+
 
 
