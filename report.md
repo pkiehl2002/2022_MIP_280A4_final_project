@@ -181,28 +181,6 @@ https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
    
  samtools depth Paenibacillus_Illumina_mapped_to_penny.sorted.bam > Paenibacillus_Illumina_mapped_to_penny_sorted_depth
  
-## Blast remaining contigs in better spades assembly
-
-Contig #2 
-
-![Screenshot (29)](https://user-images.githubusercontent.com/116305887/205126003-86f98896-4cac-4b09-a85b-bed12a1f926e.png)
-
-Contig #3
-
-![Screenshot (30)](https://user-images.githubusercontent.com/116305887/205126964-73df507f-8f7d-45d1-942b-5020b6caa7b8.png)
-
-Contig #4 
-
-![Screenshot (31)](https://user-images.githubusercontent.com/116305887/205127483-d259090e-1c65-424b-bc2a-1b7c2849c176.png)
-
-Contig #5
-
-![Screenshot (32)](https://user-images.githubusercontent.com/116305887/205127700-25a312f7-ba84-4ac2-9d17-100ab117fe49.png)
-
-Contig #6
-
-![Screenshot (33)](https://user-images.githubusercontent.com/116305887/205127891-8c1d1835-a9bb-4e61-a020-85efd3874778.png)
- 
 ## Other
  
 conda install -c conda-forge -c bioconda bakta
