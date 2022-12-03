@@ -112,10 +112,11 @@ get Paenibacillus_Illumina_R2_trimmed_fastqc.html
 ```
 Trimming the adapters successfully removed the adapters. The specific FASTQC reports can be found in additional_information.md.
 
-## Step 6: Assembly
+## Step 4: Assembly
 
 On Ubuntu:
 
+```
 spades.py   -o Paenibacillus_spades_assembly \
    --pe1-1 Paenibacillus_Illumina_R1_trimmed.fastq \
    --pe1-2  Paenibacillus_Illumina_R2_trimmed.fastq \
@@ -125,20 +126,19 @@ spades.py   -o Paenibacillus_spades_assembly \
  cd Paenibacillus_spades_assembly/
 
 seqtk seq -A contigs.fasta | head -2 > first_contig.fasta
+```
 
 The first contig is 1144848 bases long. 
 
 On Terminal:
 
+```
 cd .\Documents\
-
 sftp pkiehl@thoth01.cvmbs.colostate.edu
-
 cd final_project_MIP280A4
-
 cd Paenibacillus_spades_assembly
-
 get first_contig.fasta
+```
 
 ## Step 6: BLAST
 
