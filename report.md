@@ -2,7 +2,7 @@
 
 This report documents the final project I did for MIP 280A4, Microbial Sequence Analysis, in the fall of 2022. I analyzed a <em>Paenibacillus</em> genome with antimicrobial properties that was isolated from soil. I trimmed, assembled, mapped, and annotated this genome. Packages, figures, and extra data can be found in additional_information.md. This file is written in [Markdown format](https://www.markdownguide.org/basic-syntax/).  
 
-## Step 1: Quality Test
+## Step 1: Quality Testing
 	
 This genome was sequenced using both Illumina and Nanopore technologies. Before I used this information to assemble the genome, I analyzed the quality of the data. 
 	
