@@ -14,11 +14,11 @@ conda activate bio_tools
 cd /home/data_for_classes/2022_MIP_280A4/final_project_datasets
 cp Paenibacillus_Illumina_R1.fastq ~/final_project_MIP280A4
 cp Paenibacillus_Illumina_R2.fastq ~/final_project_MIP280A4/
-cp Paenibacillus_Nanopore.fastq ~/final_project_MIP280A4/
+cp Paenibacillus_Nanopore.fastq.gz ~/final_project_MIP280A4/
 cd ~/final_project_MIP280A4/
 fastqc Paenibacillus_Illumina_R1.fastq
 fastqc Paenibacillus_Illumina_R2.fastq
-fastqc Paenibacillus_Nanopore.fastq
+fastqc Paenibacillus_Nanopore.fastq.gz
 ```
 
 On Terminal:
@@ -116,19 +116,21 @@ Trimming the adapters successfully removed the adapters. The specific FASTQC rep
 
 On Ubuntu:
 
+## Spades Assembly w/ Updated Nanopore
+
 ```
-spades.py   -o Paenibacillus_spades_assembly \
+spades.py   -o Paenibacillus_spades_assembly_2 \
    --pe1-1 Paenibacillus_Illumina_R1_trimmed.fastq \
    --pe1-2  Paenibacillus_Illumina_R2_trimmed.fastq \
-   --nanopore Paenibacillus_Nanopore.fastq \
+   --nanopore Paenibacillus_Nanopore.fastq.gz \
    -m 24 -t 18
    
- cd Paenibacillus_spades_assembly/
+cd Paenibacillus_spades_assembly_2/
 
-seqtk seq -A contigs.fasta | head -2 > first_contig.fasta
+seqtk seq -A scaffolds.fasta | head -2 > first_scaffold.fasta
 ```
 
-The first contig is 1144848 bases long. 
+The first scaffold is 5,045,338 bases long. 
 
 On Terminal:
 
@@ -136,8 +138,8 @@ On Terminal:
 cd .\Documents\
 sftp pkiehl@thoth01.cvmbs.colostate.edu
 cd final_project_MIP280A4
-cd Paenibacillus_spades_assembly
-get first_contig.fasta
+cd Paenibacillus_spades_assembly_2
+get first_scaffold.fasta
 ```
 
 ## Step 6: BLAST
@@ -236,17 +238,6 @@ bowtie2 -x penny_scaffolds_index \
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
 
-
-
-
-## Spades Assembly w/ Updated Nanopore
-spades.py   -o Paenibacillus_spades_assembly_2 \
-   --pe1-1 Paenibacillus_Illumina_R1_trimmed.fastq \
-   --pe1-2  Paenibacillus_Illumina_R2_trimmed.fastq \
-   --nanopore Paenibacillus_Nanopore.fastq.gz \
-   -m 24 -t 18
-   
- Longest scaffold is 5045338 bases long.
  
  ## Coverage Depth
  
