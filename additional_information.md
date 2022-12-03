@@ -749,5 +749,35 @@ Illumina R2 Adapter Content After Trimming
 ![Screenshot 2022-12-03 at 3 49 03 PM](https://user-images.githubusercontent.com/116305887/205465327-55fa6746-e447-4645-a8f2-5bef032ea7db.jpg)
 
 
+## Trimming Adapters Individual Reads Results
 
+=== First read: Adapter 1 ===
+
+Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 302507 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 26.2%
+  C: 20.1%
+  G: 20.4%
+  T: 33.2%
+  none/other: 0.0%
+  
+=== Second read: Adapter 2 ===
+
+Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 288766 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.7%
+  C: 20.0%
+  G: 20.7%
+  T: 33.6%
+  none/other: 0.0%
 
