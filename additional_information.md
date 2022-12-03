@@ -740,15 +740,6 @@ Illumina R2 Adapter Content Before Trimming
 
 ![Screenshot 2022-12-03 at 3 48 06 PM](https://user-images.githubusercontent.com/116305887/205465295-f4bfc274-0181-499b-afa8-f3a2d25ac747.jpg)
 
-Illumina R1 Adapter Content After Trimming
-
-![Screenshot 2022-12-03 at 3 48 32 PM](https://user-images.githubusercontent.com/116305887/205465308-a5343c62-b717-4e6a-81cf-3c94985c873c.jpg)
-
-Illumina R2 Adapter Content After Trimming
-
-![Screenshot 2022-12-03 at 3 49 03 PM](https://user-images.githubusercontent.com/116305887/205465327-55fa6746-e447-4645-a8f2-5bef032ea7db.jpg)
-
-
 ## Trimming Adapters Individual Reads Results
 
 === First read: Adapter 1 ===
