@@ -64,6 +64,29 @@ Illumina R2 Adapter Content
 
 ![Screenshot 2022-12-03 at 4 10 47 PM](https://user-images.githubusercontent.com/116305887/205465978-187eb06f-0ec0-45df-ad66-ff2cd49c4ae0.jpg)
 
+## BLAST Results
+
+Scaffold #2
+
+![Screenshot 2022-12-03 at 4 45 20 PM](https://user-images.githubusercontent.com/116305887/205467047-0e9e5f1a-23ea-4728-b15c-2d39e6b52f63.jpg)
+
+Scaffold #3
+
+![Screenshot 2022-12-03 at 4 45 54 PM](https://user-images.githubusercontent.com/116305887/205467063-36859e9e-69a3-4430-bb60-63b40f09ec30.jpg)
+
+Scaffold #4
+
+![Screenshot 2022-12-03 at 4 46 17 PM](https://user-images.githubusercontent.com/116305887/205467070-f908b057-b921-4973-bf2d-06d318627f2f.jpg)
+
+Scaffold #5
+
+![Screenshot 2022-12-03 at 4 46 36 PM](https://user-images.githubusercontent.com/116305887/205467075-a85ea45a-d010-4f05-96e7-fd65c15c030e.jpg)
+
+Scaffold #6
+
+![Screenshot 2022-12-03 at 4 46 56 PM](https://user-images.githubusercontent.com/116305887/205467088-a2e9621d-2267-401e-9654-0153b0df1757.jpg)
+
+
 ## Packages in bio_tools conda environment 
 
 ```
