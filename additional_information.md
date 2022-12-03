@@ -86,6 +86,21 @@ Scaffold #6
 
 ![Screenshot 2022-12-03 at 4 46 56 PM](https://user-images.githubusercontent.com/116305887/205467088-a2e9621d-2267-401e-9654-0153b0df1757.jpg)
 
+Scaffold #7
+
+![Screenshot 2022-12-03 at 4 49 22 PM](https://user-images.githubusercontent.com/116305887/205467127-17e253e9-a239-45e6-9fea-bc588ad7e896.jpg)
+
+Scaffold #8
+
+![Screenshot 2022-12-03 at 4 50 38 PM](https://user-images.githubusercontent.com/116305887/205467146-7d1d2a87-0221-4841-96b6-6ce8f8db285a.jpg)
+
+Scaffold #9
+
+![Screenshot 2022-12-03 at 4 51 13 PM](https://user-images.githubusercontent.com/116305887/205467157-01a90dd6-b89c-4612-b049-c03b09d3bcdd.jpg)
+
+Scaffold #10
+
+![Screenshot 2022-12-03 at 4 51 50 PM](https://user-images.githubusercontent.com/116305887/205467170-95f8b7e2-1e3e-4eb7-9221-23a579ffd4a2.jpg)
 
 ## Packages in bio_tools conda environment 
 
