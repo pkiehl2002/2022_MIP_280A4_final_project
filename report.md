@@ -116,8 +116,6 @@ Trimming the adapters successfully removed the adapters. The specific FASTQC rep
 
 On Ubuntu:
 
-## Spades Assembly w/ Updated Nanopore
-
 ```
 spades.py   -o Paenibacillus_spades_assembly_2 \
    --pe1-1 Paenibacillus_Illumina_R1_trimmed.fastq \
@@ -142,73 +140,7 @@ cd Paenibacillus_spades_assembly_2
 get first_scaffold.fasta
 ```
 
-## Step 6: BLAST
-
-try blastn too!
-
-First 1000 bases of first contig
-
-![Screenshot (15)](https://user-images.githubusercontent.com/116305887/204674746-d5554458-ae9a-46ee-8324-7476411796d7.png)
-
-First 2500 bases of first contig
-
-![Screenshot (16)](https://user-images.githubusercontent.com/116305887/204674769-b3439638-142e-4de6-91d7-44be05f47ae7.png)
-
-Middle bases from first contigs (lines 17015-17427 in Notepad++ (approximately bases 1,020,840 - 1,045,560))
-
-![Screenshot (17)](https://user-images.githubusercontent.com/116305887/204676059-aed5529a-4aee-49c7-94f7-2b5f6218905c.png)
-
-Middle bases from first contig (lines 7227 - 7651 (approximately bases 433,560 - 459,000)
-
-![Screenshot (19)](https://user-images.githubusercontent.com/116305887/204676463-6ff340c9-d7cf-4cee-b750-4a418c7eeaf8.png)
-
-Middle bases from first contigs (lines 12000 - 12413 (approximately bases 719,940 - 744,720))
-
-![Screenshot (20)](https://user-images.githubusercontent.com/116305887/204677030-4872f9b2-58fe-4dfc-b506-45705abcae90.png)
-
-Last bases from first contigs (lines 18671 - 19082 (approximately bases 1,120,200 - 1,144,848))
-
-![Screenshot (21)](https://user-images.githubusercontent.com/116305887/204678163-c9cfeea8-eb4f-4bb3-bb97-0e245921b2f4.png)
-
-Contig #2
-
-Middle bases (lines 19213-19638)
-
-![Screenshot (22)](https://user-images.githubusercontent.com/116305887/204949788-d1d6ba61-3f7c-4511-81a3-50750ba1dd98.png)
- 
-Contig #3 
-
-Middle bases (lines 30590-31010)
-
-![Screenshot (23)](https://user-images.githubusercontent.com/116305887/204950331-38f9b22d-7d28-4ebc-906a-486c571f3f37.png)
-
-Contig #4
-
-Middle bases (lines 41530-41945)
-
-![Screenshot (24)](https://user-images.githubusercontent.com/116305887/204950684-8e5f6011-b762-4ea0-846c-9d7076362cdc.png)
-
-Contig #5
-
-Middle bases (lines 52668-53078)
-
-![Screenshot (25)](https://user-images.githubusercontent.com/116305887/204951120-94b2517d-932c-4c3c-8e86-39794616b0a9.png)
-
-Contigs #6
-
-Middle bases (lines 6337-63750)
-
-![Screenshot (26)](https://user-images.githubusercontent.com/116305887/204951215-90c3bdbd-6563-4d42-bb58-fcb2138f6481.png)
-
-Contig #7
-
-Middle bases (lines 72480-72900) 
-
-![Screenshot (27)](https://user-images.githubusercontent.com/116305887/204951728-51a908ec-4c1f-4a14-95c2-2ab5d640c349.png)
-
-Contig #10
-
-![Screenshot (18)](https://user-images.githubusercontent.com/116305887/204676092-6a87d752-50e3-4999-be40-1d032a0e7a08.png)
+## Step 5: BLAST
 
 Scaffold #1
 
