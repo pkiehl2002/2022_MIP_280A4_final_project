@@ -354,3 +354,9 @@ yaml                      0.2.5                h7f98852_2    conda-forge
 zipp                      3.10.0             pyhd8ed1ab_0    conda-forge
 zlib                      1.2.13               h166bdaf_4    conda-forge
 zstd                      1.5.2                h6239696_4    conda-forge
+
+
+## FASTQC Results
+
+Illumina R1 Quality
+
