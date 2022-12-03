@@ -781,3 +781,13 @@ Bases preceding removed adapters:
   T: 33.6%
   none/other: 0.0%
 
+## Post-Trimming FASTQC Reports
+
+Illumina R1 Adapter Content
+
+![Screenshot 2022-12-03 at 4 10 22 PM](https://user-images.githubusercontent.com/116305887/205465966-7e8a4cd3-2470-41de-afa1-774e92fce90e.jpg)
+
+Illumina R2 Adapter Content
+
+![Screenshot 2022-12-03 at 4 10 47 PM](https://user-images.githubusercontent.com/116305887/205465978-187eb06f-0ec0-45df-ad66-ff2cd49c4ae0.jpg)
+
