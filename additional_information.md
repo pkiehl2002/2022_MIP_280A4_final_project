@@ -138,6 +138,12 @@ Nanopore reads coverage calculations
 
 ![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
 
+## Geneious Annotation
+
+![Screenshot (40)](https://user-images.githubusercontent.com/116305887/205471844-a0afa4d5-8f2c-4133-ab89-a63d752ed565.png)
+
+![Screenshot (41)](https://user-images.githubusercontent.com/116305887/205471847-65ffa4be-55f5-410d-a38a-436f29a49134.png)
+
 ## Bakta Output
 parse genome sequences...
 
