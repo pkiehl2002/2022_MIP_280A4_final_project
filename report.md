@@ -171,6 +171,8 @@ samtools sort -T tmp -O 'bam' Paenibacillus_Illumina_mapped_to_penny_scaffolds.b
 samtools depth Paenibacillus_Illumina_mapped_to_penny.sorted.bam > Paenibacillus_Illumina_mapped_to_penny_sorted_depth
 ```
 
+The average coverage depth was 74.3249. The full analysis can be seen in additional_information.md. 
+
 ## Step 7: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
 ```
@@ -184,7 +186,7 @@ samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam > nanopore_mapped
 samtools coverage nanopore_mapped_to_scaffolds_sorted.bam  
 ```
 
-![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
+The average coverage depth was 13.1892. The full analysis can be seen in additional_information.md. 
 
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
@@ -312,7 +314,6 @@ file:///Users/pariskiehl/Desktop/CSUSemester3/NanoPlot-report.html
 
 samtools coverage Paenibacillus_Illumina_mapped_to_penny.sorted.bam
 
-![Screenshot 2022-12-01 at 6 36 56 PM](https://user-images.githubusercontent.com/116305887/205194996-009587b1-dc2d-4e76-b8d9-ac793793b21b.jpg)
 
 
 
