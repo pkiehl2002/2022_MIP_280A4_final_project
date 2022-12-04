@@ -212,7 +212,7 @@ conda install -c conda-forge -c bioconda bakta
 bakta --db /home/data_for_classes/bakta_database/db scaffolds.fasta
 amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderplus-db 
 ```
-The bakta output can be found in additional_information.md.
+The bakta output and annotations in Geneious can be found in additional_information.md.
 
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
