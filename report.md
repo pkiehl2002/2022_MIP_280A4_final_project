@@ -150,7 +150,7 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 The BLAST results of the remaining scaffolds can be found in additional_information.md. 
 
-## Step 6: Mapping Illumina Reads to Scaffolds
+## Step 6: Mapping Illumina Reads to Scaffolds and Calculating Coverage Depth
 
 ```
 bowtie2-build scaffolds.fasta penny_scaffolds_index 
@@ -166,12 +166,20 @@ bowtie2 -x penny_scaffolds_index \
    -S Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam
 ```
 
-## Step 7: Mapping Nanopore Reads to Scaffolds
+## Step 7: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
 ```
 conda install -c bioconda minimap2
 minimap2 -a -x map-ont Paenibacillus_spades_assembly_2/scaffolds.fasta Paenibacillus_Nanopore.fastq.gz > approx-mapping_new_nanopore_to_scaffold.sam
 ```
+
+```
+samtools view -b approx-mapping_new_nanopore_to_scaffold.sam > nanopore_mapped_to_scaffolds.bam
+samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam > nanopore_mapped_to_scaffolds_sorted.bam
+samtools coverage nanopore_mapped_to_scaffolds_sorted.bam  
+```
+
+![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
 
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
@@ -310,11 +318,5 @@ samtools coverage Paenibacillus_Illumina_mapped_to_penny.sorted.bam
 
 ![Screenshot 2022-12-01 at 6 36 56 PM](https://user-images.githubusercontent.com/116305887/205194996-009587b1-dc2d-4e76-b8d9-ac793793b21b.jpg)
 
-samtools view -b approx-mapping_new_nanopore_to_scaffold.sam > nanopore_mapped_to_scaffolds.bam
 
-samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam > nanopore_mapped_to_scaffolds_sorted.bam
-
-samtools coverage nanopore_mapped_to_scaffolds_sorted.bam  
-
-![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
 
