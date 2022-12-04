@@ -128,6 +128,186 @@ Nanopore reads coverage calculations
 
 ![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
 
+## Bakta Output
+parse genome sequences...
+
+	imported: 21
+  
+	filtered & revised: 21
+  
+	contigs: 21
+  
+
+start annotation...
+
+predict tRNAs...
+
+found: 79
+
+predict tmRNAs...
+
+found: 1
+
+predict rRNAs...
+
+found: 25
+
+predict ncRNAs...
+
+found: 5
+
+predict ncRNA regions...
+
+found: 48
+
+predict CRISPR arrays...
+
+found: 2
+
+predict & annotate CDSs...
+
+predicted: 4385 
+
+discarded spurious: 0
+
+revised translational exceptions: 0
+
+detected IPSs: 1933
+
+found PSCs: 2179
+
+found PSCCs: 163
+
+lookup annotations...
+
+conduct expert systems...
+
+amrfinder: 1
+
+protein sequences: 3
+
+combine annotations and mark hypotheticals...
+
+detect pseudogenes...
+
+pseudogene candidates: 14
+
+found pseudogenes: 10
+
+analyze hypothetical proteins: 618
+
+detected Pfam hits: 72 
+
+calculated proteins statistics
+
+revise special cases...
+
+extract sORF...
+
+potential: 82636
+
+discarded due to overlaps: 68156
+
+discarded spurious: 0
+
+detected IPSs: 1
+
+found PSCs: 0
+
+lookup annotations...
+
+filter and combine annotations...
+
+filtered sORFs: 1
+
+detect gaps...
+
+found: 9
+
+detect oriCs/oriVs...
+
+found: 0
+
+detect oriTs...
+
+found: 0
+
+apply feature overlap filters...
+
+select features and create locus tags...
+
+selected: 4546
+
+genome statistics:
+
+Genome size: 5,050,086 bp
+
+Contigs/replicons: 21
+
+GC: 39.4 %
+
+N50: 5,045,338
+
+N ratio: 0.0 %
+
+coding density: 86.8 %
+
+annotation summary:
+
+tRNAs: 79
+
+tmRNAs: 1
+
+rRNAs: 25
+
+ncRNAs: 5
+
+ncRNA regions: 46
+
+CRISPR arrays: 2
+
+CDSs: 4378
+
+hypotheticals: 611
+
+pseudogenes: 10
+
+signal peptides: 0
+
+sORFs: 1
+
+gaps: 9
+
+oriCs/oriVs: 0
+
+oriTs: 0
+
+export annotation results to: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
+	human readable TSV...
+
+GFF3...
+
+INSDC GenBank & EMBL...
+
+genome sequences...
+
+feature nucleotide sequences...
+
+translated CDS sequences...
+
+circular genome plot...
+
+/home/pkiehl/miniconda3/envs/bio_tools/lib/python3.9/site-packages/Bio/SeqUtils/__init__.py:144: BiopythonDeprecationWarning: GC is deprecated; please use gc_fraction instead.
+  
+  warnings.warn(
+	
+  hypothetical TSV...
+	
+  translated hypothetical CDS sequences...
+	
+  machine readable JSON...
+	
+  genome and annotation summary...
 ## Packages in bio_tools conda environment 
 
 ```
