@@ -161,7 +161,13 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 The BLAST results of the remaining scaffolds can be found in additional_information.md. 
 
-## Step 7: Mapping Illumina Reads to Scaffolds and Calculating Coverage Depth
+## Step 7: Alignment
+
+Align first five scaffolds from assembly with CP013023 <em>Paenibacillus bovis</em> reference sequence. 
+
+LASTZ alignment has a pairwise identity of 75.6%. Geneious diagrams of the alignments can be found in additional_information.md.
+
+## Step 8: Mapping Illumina Reads to Scaffolds and Calculating Coverage Depth
 
 ```
 bowtie2-build scaffolds.fasta penny_scaffolds_index 
@@ -184,7 +190,7 @@ samtools depth Paenibacillus_Illumina_mapped_to_penny.sorted.bam > Paenibacillus
 
 The average coverage depth was 74.3249. The full analysis can be seen in additional_information.md. 
 
-## Step 8: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
+## Step 9: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
 ```
 conda install -c bioconda minimap2
@@ -199,7 +205,7 @@ samtools coverage nanopore_mapped_to_scaffolds_sorted.bam
 
 The average coverage depth was 13.1892. The full analysis can be seen in additional_information.md. 
 
-## Step 9: Annotation
+## Step 10: Annotation
 
 ```
 conda install -c conda-forge -c bioconda bakta
@@ -211,7 +217,7 @@ The bakta output can be found in additional_information.md.
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
  
-## Step 10: Nanoplot
+## Step 11: Nanoplot
 
 ```
 conda install -c bioconda nanoplot
