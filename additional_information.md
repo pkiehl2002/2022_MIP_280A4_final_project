@@ -64,6 +64,10 @@ Illumina R2 Adapter Content
 
 ![Screenshot 2022-12-03 at 4 10 47 PM](https://user-images.githubusercontent.com/116305887/205465978-187eb06f-0ec0-45df-ad66-ff2cd49c4ae0.jpg)
 
+## Assembly Statistics
+
+![Screenshot 2022-12-01 at 11 21 21 AM](https://user-images.githubusercontent.com/116305887/205130601-008d71a3-a453-43ee-bd61-136601f08b88.jpg)
+
 ## BLAST Results
 
 Scaffold #2
