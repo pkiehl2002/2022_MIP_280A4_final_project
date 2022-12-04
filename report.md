@@ -150,24 +150,28 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 The BLAST results of the remaining scaffolds can be found in additional_information.md. 
 
-## Step ? Mapping Reads to Scaffolds
+## Step 6: Mapping Illumina Reads to Scaffolds
 
+```
 bowtie2-build scaffolds.fasta penny_scaffolds_index 
-
 cd ..
-
 mv Paenibacillus_Illumina_R1_trimmed.fastq Paenibacillus_spades_assembly/
- 
 mv Paenibacillus_Illumina_R2_trimmed.fastq Paenibacillus_spades_assembly/
-
 cd Paenibacillus_spades_assembly/
-  
 bowtie2 -x penny_scaffolds_index \
    -1 Paenibacillus_Illumina_R1_trimmed.fastq \
    -2 Paenibacillus_Illumina_R2_trimmed.fastq \
    --no-unal \
    --threads 8 \
    -S Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam
+```
+
+## Step 7: Mapping Nanopore Reads to Scaffolds
+
+```
+conda install -c bioconda minimap2
+minimap2 -a -x map-ont Paenibacillus_spades_assembly_2/scaffolds.fasta Paenibacillus_Nanopore.fastq.gz > approx-mapping_new_nanopore_to_scaffold.sam
+```
 
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
@@ -295,8 +299,7 @@ export annotation results to: /home/pkiehl/final_project_MIP280A4/Paenibacillus_
 	machine readable JSON...
 	genome and annotation summary...
 - map nanopore reads to scaffolds w/ minimap2
-conda install -c bioconda minimap2
-minimap2 -a -x map-ont Paenibacillus_spades_assembly_2/scaffolds.fasta Paenibacillus_Nanopore.fastq.gz > approx-mapping_new_nanopore_to_scaffold.sam
+
 - cool QC nanopore visualization
 conda install -c bioconda nanoplot
 NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
