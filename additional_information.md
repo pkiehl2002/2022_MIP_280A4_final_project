@@ -102,6 +102,20 @@ Scaffold #10
 
 ![Screenshot 2022-12-03 at 4 51 50 PM](https://user-images.githubusercontent.com/116305887/205467170-95f8b7e2-1e3e-4eb7-9221-23a579ffd4a2.jpg)
 
+## Mapping Reads and Coverage Depth Calculations
+
+Illumina mapped in Geneious
+
+Nanopore mapped in Geneious
+
+Illumina coverage calculations
+
+![Screenshot 2022-12-01 at 6 36 56 PM](https://user-images.githubusercontent.com/116305887/205194996-009587b1-dc2d-4e76-b8d9-ac793793b21b.jpg)
+
+Nanopore coverage calculations
+
+![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
+
 ## Packages in bio_tools conda environment 
 
 ```
