@@ -106,6 +106,13 @@ Scaffold #10
 
 ![Screenshot 2022-12-03 at 4 51 50 PM](https://user-images.githubusercontent.com/116305887/205467170-95f8b7e2-1e3e-4eb7-9221-23a579ffd4a2.jpg)
 
+## Alignment Diagrams
+
+Mauve Diagram
+
+LASTZ alignment
+
+
 ## Mapping Reads and Coverage Depth Calculations
 
 Illumina reads mapped in Geneious
