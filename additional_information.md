@@ -131,11 +131,11 @@ Nanopore reads coverage calculations
 ## Bakta Output
 parse genome sequences...
 
-	imported: 21
+imported: 21
   
-	filtered & revised: 21
+filtered & revised: 21
   
-	contigs: 21
+contigs: 21
   
 
 start annotation...
