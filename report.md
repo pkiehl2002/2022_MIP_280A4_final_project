@@ -165,6 +165,11 @@ bowtie2 -x penny_scaffolds_index \
    --threads 8 \
    -S Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam
 ```
+```
+samtools view -b Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam > Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam 
+samtools sort -T tmp -O 'bam' Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam  > Paenibacillus_Illumina_mapped_to_penny.sorted.bam   
+samtools depth Paenibacillus_Illumina_mapped_to_penny.sorted.bam > Paenibacillus_Illumina_mapped_to_penny_sorted_depth
+```
 
 ## Step 7: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
@@ -183,15 +188,6 @@ samtools coverage nanopore_mapped_to_scaffolds_sorted.bam
 
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
-
- 
- ## Coverage Depth
- 
- samtools view -b Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam > Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam
- 
- samtools sort -T tmp -O 'bam' Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam  > Paenibacillus_Illumina_mapped_to_penny.sorted.bam
-   
- samtools depth Paenibacillus_Illumina_mapped_to_penny.sorted.bam > Paenibacillus_Illumina_mapped_to_penny_sorted_depth
  
 ## Other
  
