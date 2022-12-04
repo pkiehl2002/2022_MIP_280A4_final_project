@@ -140,7 +140,18 @@ cd Paenibacillus_spades_assembly_2
 get first_scaffold.fasta
 ```
 
-## Step 5: BLAST
+## Step 5: Assembly Statistics
+
+TODO maybe consider moving up after assembly
+
+```
+conda install -c bioconda quast
+quast.py scaffolds.fasta -o scaffolds_stats
+```
+
+The N50 is 5,045,338. More calculations can be found in additional_information.md.
+
+## Step 6: BLAST
 
 Scaffold #1 from Notepad++ middle bases (lines 3600-4018)
 
@@ -150,7 +161,7 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 The BLAST results of the remaining scaffolds can be found in additional_information.md. 
 
-## Step 6: Mapping Illumina Reads to Scaffolds and Calculating Coverage Depth
+## Step 7: Mapping Illumina Reads to Scaffolds and Calculating Coverage Depth
 
 ```
 bowtie2-build scaffolds.fasta penny_scaffolds_index 
@@ -173,7 +184,7 @@ samtools depth Paenibacillus_Illumina_mapped_to_penny.sorted.bam > Paenibacillus
 
 The average coverage depth was 74.3249. The full analysis can be seen in additional_information.md. 
 
-## Step 7: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
+## Step 8: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
 ```
 conda install -c bioconda minimap2
@@ -188,14 +199,7 @@ samtools coverage nanopore_mapped_to_scaffolds_sorted.bam
 
 The average coverage depth was 13.1892. The full analysis can be seen in additional_information.md. 
 
-## Step 8: Assembly Statistics
 
-TODO maybe consider moving up after assembly
-
-```
-conda install -c bioconda quast
-quast.py scaffolds.fasta -o scaffolds_stats
-```
 
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
