@@ -110,8 +110,11 @@ Scaffold #10
 
 Mauve Diagram
 
+![Screenshot (38)](https://user-images.githubusercontent.com/116305887/205471672-dd60b7b9-4a4d-4a0b-9d85-72d8e4f45771.png)
+
 LASTZ alignment
 
+![Screenshot (39)](https://user-images.githubusercontent.com/116305887/205471678-eab0b57d-c181-4c16-97ba-04e5f657b821.png)
 
 ## Mapping Reads and Coverage Depth Calculations
 
