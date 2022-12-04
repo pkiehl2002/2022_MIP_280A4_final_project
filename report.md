@@ -188,18 +188,25 @@ samtools coverage nanopore_mapped_to_scaffolds_sorted.bam
 
 The average coverage depth was 13.1892. The full analysis can be seen in additional_information.md. 
 
+## Step 8: Assembly Statistics
+
+TODO maybe consider moving up after assembly
+
+```
+conda install -c bioconda quast
+quast.py scaffolds.fasta -o scaffolds_stats
+```
+
 https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
 
  
-## Other
+## Other 
  
 conda install -c conda-forge -c bioconda bakta
  
 bakta --db ADD PATHWAY first_scaffold.fasta
  
-conda install -c bioconda quast
 
-quast.py scaffolds.fasta -o scaffolds_stats
 
 ![Screenshot 2022-12-01 at 11 21 21 AM](https://user-images.githubusercontent.com/116305887/205130601-008d71a3-a453-43ee-bd61-136601f08b88.jpg)
 
