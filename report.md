@@ -214,8 +214,6 @@ amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderpl
 ```
 The bakta output and annotations in Geneious can be found in additional_information.md.
 
-https://www.sciencedirect.com/science/article/abs/pii/S014486171630114X
-
  
 ## Step 11: Nanoplot
 
