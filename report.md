@@ -142,8 +142,6 @@ get first_scaffold.fasta
 
 ## Step 5: Assembly Statistics
 
-TODO maybe consider moving up after assembly
-
 ```
 conda install -c bioconda quast
 quast.py scaffolds.fasta -o scaffolds_stats
