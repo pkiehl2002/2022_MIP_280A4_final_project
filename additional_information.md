@@ -132,6 +132,8 @@ Nanopore reads mapped in Geneious
 
 Illumina reads coverage calculations
 
+![Screenshot 2022-12-05 at 9 11 05 PM](https://user-images.githubusercontent.com/116305887/205811582-614cc76f-0497-4408-803f-88500e0538ce.jpg)
+
 ![Screenshot 2022-12-01 at 6 36 56 PM](https://user-images.githubusercontent.com/116305887/205194996-009587b1-dc2d-4e76-b8d9-ac793793b21b.jpg)
 
 Nanopore reads coverage calculations
