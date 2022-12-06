@@ -1,6 +1,6 @@
 # MIP 280A4 Final Project 2022
 
-This report documents the final project I did for MIP 280A4, Microbial Sequence Analysis, in the fall of 2022. I analyzed a <em>Paenibacillus</em> genome with antimicrobial properties that was isolated from soil. I trimmed, assembled, mapped, and annotated this genome. Packages, figures, and extra data can be found in additional_information.md. This file is written in [Markdown format](https://www.markdownguide.org/basic-syntax/).  
+This report documents the final project I did for MIP 280A4, Microbial Sequence Analysis, in the fall of 2022. I analyzed a <em>Paenibacillus</em> genome with antimicrobial properties that was isolated from soil. I trimmed, assembled, mapped, and annotated this genome. The workflow and results of this project can be found in this file. Packages, figures, and extra data can be found in additional_information.md. These files are written in [Markdown format](https://www.markdownguide.org/basic-syntax/).  
 
 ## Step 1: Quality Testing
 	
