@@ -102,8 +102,10 @@ On Terminal: /home
 
 ```
 cd .\Documents\
+```
 
-sftp pkiehl@thoth01.cvmbs.colostate.edu
+sftp into server
+```
 
 cd final_project_MIP280A4
 
