@@ -233,7 +233,7 @@ amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderpl
  
 ## Step 11: Nanoplot
 
-In Ubunut: /home/pkiehl/final_project_MIP280A4
+In Ubuntu: /home/pkiehl/final_project_MIP280A4
 
 ```
 conda install -c bioconda nanoplot
