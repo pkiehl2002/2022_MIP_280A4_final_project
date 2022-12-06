@@ -8,11 +8,9 @@ Illumina R2 Quality
 
 ![Screenshot 2022-12-03 at 3 46 31 PM](https://user-images.githubusercontent.com/116305887/205465233-2810a8e3-e599-4fc5-b098-93cbaf83c2a7.jpg)
 
-Nanopore 1 Quality
+Nanopore Quality
 
-![Screenshot 2022-12-03 at 3 46 52 PM](https://user-images.githubusercontent.com/116305887/205465251-68d7fda4-330d-4def-871f-92017c613803.jpg)
-
-TODO Nanopore 2 Quality
+![Screenshot 2022-12-05 at 9 16 43 PM](https://user-images.githubusercontent.com/116305887/205812473-e64bd71d-0c19-4fa3-904c-edfa4d0928bd.jpg)
 
 Illumina R1 Adapter Content Before Trimming
 
