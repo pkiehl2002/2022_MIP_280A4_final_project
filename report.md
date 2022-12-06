@@ -227,7 +227,16 @@ conda install -c conda-forge -c bioconda bakta
 bakta --db /home/data_for_classes/bakta_database/db scaffolds.fasta
 amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderplus-db 
 ```
-4,539 genes were found in the annotation. The bakta output and annotations in Geneious can be found in additional_information.md.
+
+In Geneious: 
+- Import annotation 
+- Export annotations table 
+- Import table into text editor
+- sftp into server
+- put file in server
+- wc -l [file]
+
+4,537 lines -1 = 4,536 genes were found in the annotation. The bakta output and annotations in Geneious can be found in additional_information.md.
 
  
 ## Step 11: Nanoplot
