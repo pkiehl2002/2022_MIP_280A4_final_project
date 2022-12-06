@@ -6,7 +6,7 @@ This report documents the final project I did for MIP 280A4, Microbial Sequence 
 	
 This genome was sequenced using both Illumina and Nanopore technologies. Before I used this information to assemble the genome, I analyzed the quality of the data. 
 	
-On Ubuntu:
+On Ubuntu: /home/pkiehl
 
 ```
 ssh pkiehl@thoth01.cvmbs.colostate.edu
@@ -21,7 +21,7 @@ fastqc Paenibacillus_Illumina_R2.fastq
 fastqc Paenibacillus_Nanopore.fastq.gz
 ```
 
-On Terminal:
+On Terminal: /home
 
 ```
 cd .\Documents\
@@ -38,7 +38,7 @@ Specific data from FASTQC report can be found in additional_information.md. As e
 
 The Illumina Universal Adapter sequence is AGATCGGAAGAG.
 
-On Ubuntu: 
+On Ubuntu: /home/pkiehl/final_project_MIP280A4
 ```
 cutadapt \
    -a AGATCGGAAGAG \
@@ -89,7 +89,7 @@ The results from the individual reads can be found in additional_information.md.
  
 ## Step 3: Quality Check #2
 
-On Ubuntu: 
+On Ubuntu: /home/pkiehl/final_project_MIP280A4
 
 ```
 fastqc Paenibacillus_Illumina_R1_trimmed.fastq
@@ -97,7 +97,7 @@ fastqc Paenibacillus_Illumina_R1_trimmed.fastq
 fastqc Paenibacillus_Illumina_R2_trimmed.fastq
 ```
 
-On Terminal:
+On Terminal: /home
 
 ```
 cd .\Documents\
@@ -114,7 +114,7 @@ Trimming the adapters successfully removed the adapters. The specific FASTQC rep
 
 ## Step 4: Assembly
 
-On Ubuntu:
+On Ubuntu: /home/pkiehl/final_project_MIP280A4
 
 ```
 spades.py   -o Paenibacillus_spades_assembly_2 \
@@ -134,7 +134,7 @@ grep NODE contigs.fasta
 
 The first scaffold is 5,045,338 bases long. 
 
-On Terminal:
+On Terminal: /home
 
 ```
 cd .\Documents\
@@ -146,6 +146,8 @@ get first_scaffold.fasta
 
 ## Step 5: Assembly Statistics
 
+On Ubuntu: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
+
 ```
 conda install -c bioconda quast
 quast.py scaffolds.fasta -o scaffolds_stats
@@ -155,6 +157,8 @@ head scaffolds_stats
 The N50 is 5,045,338 and the L50 is 1. More calculations can be found in additional_information.md.
 
 ## Step 6: BLAST
+
+Search BLAST database with default settings: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
 
 Scaffold #1 from Notepad++ middle bases (lines 3600-4018)
 
@@ -166,11 +170,15 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 ## Step 7: Alignment
 
+Full genome alignment in Geneious
+
 Align first five scaffolds from assembly with CP013023 <em>Paenibacillus bovis</em> reference sequence. 
 
 LASTZ alignment has a pairwise identity of 75.6%. Geneious diagrams of the alignments can be found in additional_information.md.
 
 ## Step 8: Mapping Illumina Reads to Scaffolds and Calculating Coverage Depth
+
+In Ubunutu: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly
 
 ```
 bowtie2-build scaffolds.fasta penny_scaffolds_index 
@@ -221,6 +229,7 @@ amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderpl
 ## Step 11: Nanoplot
 
 ```
+cd ..
 conda install -c bioconda nanoplot
 NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
 ```
