@@ -126,6 +126,10 @@ spades.py   -o Paenibacillus_spades_assembly_2 \
 cd Paenibacillus_spades_assembly_2/
 
 seqtk seq -A scaffolds.fasta | head -2 > first_scaffold.fasta
+
+grep NODE scaffolds.fasta
+
+grep NODE contigs.fasta
 ```
 
 The first scaffold is 5,045,338 bases long. 
@@ -145,9 +149,10 @@ get first_scaffold.fasta
 ```
 conda install -c bioconda quast
 quast.py scaffolds.fasta -o scaffolds_stats
+head scaffolds_stats
 ```
 
-The N50 is 5,045,338. More calculations can be found in additional_information.md.
+The N50 is 5,045,338 and the L50 is 1. More calculations can be found in additional_information.md.
 
 ## Step 6: BLAST
 
@@ -157,7 +162,7 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 ![Screenshot 2022-12-03 at 4 37 17 PM](https://user-images.githubusercontent.com/116305887/205466736-58c62a57-39aa-4f49-ab2f-b251d458de86.jpg)
 
-The BLAST results of the remaining scaffolds can be found in additional_information.md. 
+<em>Paenibacillus bovis</em> is consistently the top result across scaffolds. <em>Mastacembelus armatus</em> appeared twice in the results. The BLAST results of the remaining scaffolds can be found in additional_information.md. 
 
 ## Step 7: Alignment
 
@@ -201,7 +206,7 @@ samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam > nanopore_mapped
 samtools coverage nanopore_mapped_to_scaffolds_sorted.bam  
 ```
 
-The average coverage depth was 13.1892. The full analysis can be seen in additional_information.md. 
+The average coverage depth was 13.1892. Combined with the Illumina data, the total average coverage is 87.5141. The full analysis can be seen in additional_information.md. 
 
 ## Step 10: Annotation
 
@@ -210,7 +215,7 @@ conda install -c conda-forge -c bioconda bakta
 bakta --db /home/data_for_classes/bakta_database/db scaffolds.fasta
 amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderplus-db 
 ```
-The bakta output and annotations in Geneious can be found in additional_information.md.
+4,539 genes were found in the annotation. The bakta output and annotations in Geneious can be found in additional_information.md.
 
  
 ## Step 11: Nanoplot
@@ -219,10 +224,4 @@ The bakta output and annotations in Geneious can be found in additional_informat
 conda install -c bioconda nanoplot
 NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
 ```
-
-file:///Users/pariskiehl/Desktop/CSUSemester3/NanoPlot-report.html
-
-
-
-
 
