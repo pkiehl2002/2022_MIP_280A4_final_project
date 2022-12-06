@@ -273,5 +273,5 @@ NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
 In Unbuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
 
 ```
-conda create --name busco -c bioconda busco
+singularity shell /home/data_for_classes/singularity_images/busco-5.4.3--pyhdfd78af_0
 ```
