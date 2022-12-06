@@ -268,3 +268,10 @@ conda install -c bioconda nanoplot
 NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
 ```
 
+## Step 12: Assess Annotation
+
+In Unbuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
+
+```
+conda install -c bioconda busco
+```
