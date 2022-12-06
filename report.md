@@ -106,7 +106,6 @@ cd .\Documents\
 
 sftp into server
 ```
-
 cd final_project_MIP280A4
 
 get Paenibacillus_Illumina_R1_trimmed_fastqc.html
