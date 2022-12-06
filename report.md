@@ -193,6 +193,7 @@ bowtie2 -x penny_scaffolds_index \
    --threads 8 \
    -S Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam
 ```
+99.51% alignment
 ```
 samtools view -b Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam > Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam 
 samtools sort -T tmp -O 'bam' Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam  > Paenibacillus_Illumina_mapped_to_penny.sorted.bam   
