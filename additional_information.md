@@ -110,7 +110,7 @@ Scaffold #10
 
 Mauve Diagram
 
-![Screenshot (38)](https://user-images.githubusercontent.com/116305887/205471672-dd60b7b9-4a4d-4a0b-9d85-72d8e4f45771.png)
+![Screenshot (42)](https://user-images.githubusercontent.com/116305887/205790269-7b3e3243-d42c-4126-a9ec-df7eeb4d651b.png)
 
 LASTZ alignment
 
