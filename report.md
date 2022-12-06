@@ -274,17 +274,5 @@ In Unbuntu: (THOTH) /home/pkiehl/final_project_MIP280A4/spades_assembly_2
 
 ```
 singularity shell /home/data_for_classes/singularity_images/busco-5.4.3--pyhdfd78af_0
+busco -i first_scaffold.fasta -o busco_output_first_scaffold -m genome
 ```
-
-## Step 13: DNA Polymerase Translation Alignment
-
-Copy translation of DNA polymerase I from https://www.ncbi.nlm.nih.gov/nucleotide/CP013023.1?report=genbank&log$=nuclalign&blast_rank=1&RID=SZ0D63T2016 into text editor. 
-
-Copy translation of DNA polymerase I from annotated sequence in Geneious into text editor. 
-
-Import both files into Geneious. Perform Needlman-Wunsch alignment. 
-
-81.2% identical. 90.5% pairwise alignment. 
-
-![Screenshot (48)](https://user-images.githubusercontent.com/116305887/205991906-f2d11d4d-599b-4b54-90ed-5ff4d5d0bef7.png)
-
