@@ -6,10 +6,9 @@ This report documents the final project I did for MIP 280A4, Microbial Sequence 
 	
 This genome was sequenced using both Illumina and Nanopore technologies. Before I used this information to assemble the genome, I analyzed the quality of the data. 
 	
-On Ubuntu: /home/pkiehl
+On Ubuntu: (THOTH) /home/pkiehl
 
 ```
-ssh pkiehl@thoth01.cvmbs.colostate.edu
 conda activate bio_tools
 cd /home/data_for_classes/2022_MIP_280A4/final_project_datasets
 cp Paenibacillus_Illumina_R1.fastq ~/final_project_MIP280A4
@@ -38,7 +37,7 @@ Specific data from FASTQC report can be found in additional_information.md. As e
 
 The Illumina Universal Adapter sequence is AGATCGGAAGAG.
 
-On Ubuntu: /home/pkiehl/final_project_MIP280A4
+On Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
 ```
 cutadapt \
    -a AGATCGGAAGAG \
@@ -89,7 +88,7 @@ The results from the individual reads can be found in additional_information.md.
  
 ## Step 3: Quality Check #2
 
-On Ubuntu: /home/pkiehl/final_project_MIP280A4
+On Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
 
 ```
 fastqc Paenibacillus_Illumina_R1_trimmed.fastq
@@ -114,7 +113,7 @@ Trimming the adapters successfully removed the adapters. The specific FASTQC rep
 
 ## Step 4: Assembly
 
-On Ubuntu: /home/pkiehl/final_project_MIP280A4
+On Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
 
 ```
 spades.py   -o Paenibacillus_spades_assembly_2 \
@@ -146,7 +145,7 @@ get first_scaffold.fasta
 
 ## Step 5: Assembly Statistics
 
-On Ubuntu: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
+On Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
 
 ```
 conda install -c bioconda quast
@@ -178,7 +177,7 @@ LASTZ alignment has a pairwise identity of 75.6%. Geneious diagrams of the align
 
 ## Step 8: Mapping Illumina Reads to Scaffolds and Calculating Coverage Depth
 
-In Ubunutu: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly
+In Ubunutu: (THOTH) /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly
 
 ```
 bowtie2-build scaffolds.fasta penny_scaffolds_index 
@@ -204,7 +203,7 @@ The average coverage depth was 73.322. The full analysis can be seen in addition
 
 ## Step 9: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
-In Ubuntu: /home/pkiehl/final_project_MIP280A4
+In Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
 
 ```
 conda install -c bioconda minimap2
@@ -221,7 +220,7 @@ The average coverage depth was 13.1892. Combined with the Illumina data, the tot
 
 ## Step 10: Annotation
 
-In Ubuntu: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
+In Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
 
 ```
 conda install -c conda-forge -c bioconda bakta
@@ -233,7 +232,7 @@ amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderpl
  
 ## Step 11: Nanoplot
 
-In Ubuntu: /home/pkiehl/final_project_MIP280A4
+In Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
 
 ```
 conda install -c bioconda nanoplot
