@@ -24,7 +24,9 @@ On Terminal: /home
 
 ```
 cd .\Documents\
-sftp pkiehl@thoth01.cvmbs.colostate.edu
+```
+sftp into server
+```
 cd final_project_MIP280A4
 get Paenibacillus_Illumina_R1_fastqc.html
 get Paenibacillus_Illumina_R2_fastqc.html
@@ -137,7 +139,9 @@ On Terminal: /home
 
 ```
 cd .\Documents\
-sftp pkiehl@thoth01.cvmbs.colostate.edu
+```
+sftp into server
+```
 cd final_project_MIP280A4
 cd Paenibacillus_spades_assembly_2
 get first_scaffold.fasta
@@ -171,7 +175,9 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 Full genome alignment in Geneious
 
-Align first five scaffolds from assembly with CP013023 <em>Paenibacillus bovis</em> reference sequence. 
+Import first_scaffold.fasta into Geneious
+
+Align first scaffold from assembly with CP013023 <em>Paenibacillus bovis</em> reference sequence. 
 
 LASTZ alignment has a pairwise identity of 75.6%. Geneious diagrams of the alignments can be found in additional_information.md.
 
@@ -215,8 +221,21 @@ samtools view -b approx-mapping_new_nanopore_to_scaffold.sam > nanopore_mapped_t
 samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam > nanopore_mapped_to_scaffolds_sorted.bam
 samtools coverage nanopore_mapped_to_scaffolds_sorted.bam  
 ```
+In Termainal:
 
-The average coverage depth was 13.1892. Combined with the Illumina data, the total average coverage is 86.5112. The full analysis can be seen in additional_information.md. 
+sftp into server
+```
+cd final_project_MIP280A4
+cd Paenibacillus_spades_assembly_2
+get approx-mapping_new_nanopore_to_scaffold.sam
+```
+
+In Geneious:
+
+import approx-mapping_new_nanopore_to_scaffold.sam
+Align this file to the first_scaffold
+
+The average coverage depth was 13.1892. The full analysis can be seen in additional_information.md. 
 
 ## Step 10: Annotation
 
