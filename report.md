@@ -204,8 +204,9 @@ The average coverage depth was 73.322. The full analysis can be seen in addition
 
 ## Step 9: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
+In Ubuntu: /home/pkiehl/final_project_MIP280A4
+
 ```
-cd ..
 conda install -c bioconda minimap2
 minimap2 -a -x map-ont Paenibacillus_spades_assembly_2/scaffolds.fasta Paenibacillus_Nanopore.fastq.gz > approx-mapping_new_nanopore_to_scaffold.sam
 ```
@@ -220,6 +221,8 @@ The average coverage depth was 13.1892. Combined with the Illumina data, the tot
 
 ## Step 10: Annotation
 
+In Ubuntu: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
+
 ```
 conda install -c conda-forge -c bioconda bakta
 bakta --db /home/data_for_classes/bakta_database/db scaffolds.fasta
@@ -230,8 +233,9 @@ amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderpl
  
 ## Step 11: Nanoplot
 
+In Ubunut: /home/pkiehl/final_project_MIP280A4
+
 ```
-cd ..
 conda install -c bioconda nanoplot
 NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
 ```
