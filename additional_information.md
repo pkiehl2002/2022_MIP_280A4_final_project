@@ -68,6 +68,26 @@ Illumina R2 Adapter Content
 
 ## BLAST Results
 
+Scaffold #1 (lines 55515-55939)
+
+![Screenshot (43)](https://user-images.githubusercontent.com/116305887/205984055-d2348cdd-537c-4f14-989d-417185209bfd.png)
+
+Scaffold #1 (lines 54815-55626)
+
+![Screenshot (44)](https://user-images.githubusercontent.com/116305887/205984653-234e5231-d6f8-4d80-818a-604ec14eee89.png)
+
+Scaffold #1 (lines 53693-54126)
+
+![Screenshot (45)](https://user-images.githubusercontent.com/116305887/205985496-f87248e8-fe07-495a-bf18-9bd57fda19b5.png)
+
+Scaffold #1 (lines 51400-51814)
+
+![Screenshot (47)](https://user-images.githubusercontent.com/116305887/205987981-64591b7d-1111-4dac-8dab-67b03419542a.png)
+
+DNA polymerase I 
+
+![Screenshot (46)](https://user-images.githubusercontent.com/116305887/205988020-39f0c3bd-e3b0-405e-8556-b554f152c1d8.png)
+
 Scaffold #2
 
 ![Screenshot 2022-12-03 at 4 45 20 PM](https://user-images.githubusercontent.com/116305887/205467047-0e9e5f1a-23ea-4728-b15c-2d39e6b52f63.jpg)
