@@ -270,7 +270,7 @@ NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
 
 ## Step 12: Assess Annotation
 
-In Unbuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
+In Unbuntu: (THOTH) /home/pkiehl/final_project_MIP280A4/spades_assembly_2
 
 ```
 singularity shell /home/data_for_classes/singularity_images/busco-5.4.3--pyhdfd78af_0
