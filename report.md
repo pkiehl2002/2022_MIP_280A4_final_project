@@ -183,9 +183,9 @@ In Ubunutu: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly
 ```
 bowtie2-build scaffolds.fasta penny_scaffolds_index 
 cd ..
-mv Paenibacillus_Illumina_R1_trimmed.fastq Paenibacillus_spades_assembly/
-mv Paenibacillus_Illumina_R2_trimmed.fastq Paenibacillus_spades_assembly/
-cd Paenibacillus_spades_assembly/
+mv Paenibacillus_Illumina_R1_trimmed.fastq Paenibacillus_spades_assembly_2/
+mv Paenibacillus_Illumina_R2_trimmed.fastq Paenibacillus_spades_assembly_2/
+cd Paenibacillus_spades_assembly_2/
 bowtie2 -x penny_scaffolds_index \
    -1 Paenibacillus_Illumina_R1_trimmed.fastq \
    -2 Paenibacillus_Illumina_R2_trimmed.fastq \
@@ -197,14 +197,15 @@ bowtie2 -x penny_scaffolds_index \
 ```
 samtools view -b Paenibacillus_Illumina_mapped_to_penny_scaffolds.sam > Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam 
 samtools sort -T tmp -O 'bam' Paenibacillus_Illumina_mapped_to_penny_scaffolds.bam  > Paenibacillus_Illumina_mapped_to_penny.sorted.bam   
-samtools depth Paenibacillus_Illumina_mapped_to_penny.sorted.bam > Paenibacillus_Illumina_mapped_to_penny_sorted_depth
+samtools coverage Paenibacillus_Illumina_mapped_to_penny.sorted.bam 
 ```
 
-The average coverage depth was 74.3249. The full analysis can be seen in additional_information.md. 
+The average coverage depth was 73.322. The full analysis can be seen in additional_information.md. 
 
 ## Step 9: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
 ```
+cd ..
 conda install -c bioconda minimap2
 minimap2 -a -x map-ont Paenibacillus_spades_assembly_2/scaffolds.fasta Paenibacillus_Nanopore.fastq.gz > approx-mapping_new_nanopore_to_scaffold.sam
 ```
@@ -215,7 +216,7 @@ samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam > nanopore_mapped
 samtools coverage nanopore_mapped_to_scaffolds_sorted.bam  
 ```
 
-The average coverage depth was 13.1892. Combined with the Illumina data, the total average coverage is 87.5141. The full analysis can be seen in additional_information.md. 
+The average coverage depth was 13.1892. Combined with the Illumina data, the total average coverage is 86.5112. The full analysis can be seen in additional_information.md. 
 
 ## Step 10: Annotation
 
