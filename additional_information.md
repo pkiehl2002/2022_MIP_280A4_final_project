@@ -345,6 +345,11 @@ circular genome plot...
   
 ## DNA Polymerase I Alignment
 
+Protein:
+
+![Screenshot (48)](https://user-images.githubusercontent.com/116305887/206058449-21e3b002-ec63-4ff5-a475-3a1af0cb5d3c.png)
+
+DNA:
 ![Screenshot (49)](https://user-images.githubusercontent.com/116305887/206055085-f2d9c6bc-7548-4d4e-9608-aba9a69b5ffb.png)
 
 ## Packages in bio_tools conda environment 
