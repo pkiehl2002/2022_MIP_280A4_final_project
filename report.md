@@ -276,3 +276,21 @@ In Unbuntu: (THOTH) /home/pkiehl/final_project_MIP280A4/spades_assembly_2
 singularity shell /home/data_for_classes/singularity_images/busco-5.4.3--pyhdfd78af_0
 busco -i first_scaffold.fasta -o busco_output_first_scaffold -m genome
 ```
+
+## Step 13: DNA Polymerase I Alignment
+
+Copy DNA polymerase I reference sequence protein sequence from https://www.ncbi.nlm.nih.gov/nucleotide/CP013023.1?report=genbank&log$=nuclalign&blast_rank=1&RID=SZ0D63T2016 into Notepadd++. 
+
+Copy DNA polymerase I protein sequence from aligned genome in Geneious and paste into Notepadd++.
+
+Import both files into Geneious and make pairwise alignment using Needleman-Wunsch algorithim. 
+
+Copy DNA polymerase I reference sequence DNA sequence from CP013023 into Notepad++. 
+
+Copy DNA polymerase I DNA sequence from aligned genome in Geneious and paste into Notepad++.
+
+Import both files into Geneious and make pairwise alignment using Needleman-Wunsch algorithim. 
+
+81.2% pairwise identity and 90.5% pairwise positive for protein sequence. 
+
+73.9% pairwise identity for DNA sequence.
