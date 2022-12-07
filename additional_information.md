@@ -342,6 +342,11 @@ circular genome plot...
   machine readable JSON...
 	
   genome and annotation summary...
+  
+## DNA Polymerase I Alignment
+
+![Screenshot (49)](https://user-images.githubusercontent.com/116305887/206055085-f2d9c6bc-7548-4d4e-9608-aba9a69b5ffb.png)
+
 ## Packages in bio_tools conda environment 
 
 ```
