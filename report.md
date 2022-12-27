@@ -175,12 +175,12 @@ Illumina R1 Adapter Content
 Illumina R2 Adapter Content
 
 ![Screenshot 2022-12-03 at 4 10 47 PM](https://user-images.githubusercontent.com/116305887/205465978-187eb06f-0ec0-45df-ad66-ff2cd49c4ae0.jpg)
-Trimming the adapters successfully removed the adapters. 
+Trimming the adapters successfully removed the adapters, so this data can be used for the genome assembly 
 
 
 ## Step 4: Assembly
 
-On Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
+On Ubuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl/final_project_MIP280A4
 
 ```
 spades.py   -o Paenibacillus_spades_assembly_2 \
@@ -214,7 +214,7 @@ get first_scaffold.fasta
 
 ## Step 5: Assembly Statistics
 
-On Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
+On Ubuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
 
 ```
 conda install -c bioconda quast
@@ -222,7 +222,11 @@ quast.py scaffolds.fasta -o scaffolds_stats
 head scaffolds_stats
 ```
 
-The N50 is 5,045,338 and the L50 is 1. More calculations can be found in additional_information.md.
+The N50 is 5,045,338 and the L50 is 1. More calculations can be found below. 
+
+### Assembly Statistics
+
+![Screenshot 2022-12-01 at 11 21 21 AM](https://user-images.githubusercontent.com/116305887/205130601-008d71a3-a453-43ee-bd61-136601f08b88.jpg)
 
 ## Step 6: BLAST
 
