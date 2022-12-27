@@ -232,13 +232,15 @@ The N50 is 5,045,338 and the L50 is 1. More calculations can be found below.
 
 Search BLAST database with default settings: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome
 
+Import first_scaffold.fasta into Notepad++ and copy sequences into BLAST. Repeat for all scaffolds. 
+
 Scaffold #1 from Notepad++ middle bases (lines 3600-4018)
 
 Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0.  
 
 ![Screenshot 2022-12-03 at 4 37 17 PM](https://user-images.githubusercontent.com/116305887/205466736-58c62a57-39aa-4f49-ab2f-b251d458de86.jpg)
 
-<em>Paenibacillus bovis</em> is consistently the top result across scaffolds. <em>Mastacembelus armatus</em> was a top results twice in the results. The BLAST results of the remaining scaffolds can be found below. 
+<em>Paenibacillus bovis</em> is consistently the top hit across scaffolds, though there are mixed results. This implies that <em>Paenibacillus bovis</em> is the most closely related bacteria, but it is not a strong relation. <em>Mastacembelus armatus</em> was a top results twice in smaller scaffolds. The BLAST results of multiple searches can be found below. 
 
 ### BLAST Results
 
