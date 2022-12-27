@@ -362,11 +362,15 @@ samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam  > nanopore_mappe
 samtools coverage nanopore_mapped_to_scaffolds_sorted.bam
 ```
 
-The average coverage depth was 13.X.
+The average coverage depth was 13.1892X.
    
 The full output as well as Geneious visualization can be seen below. 
 
 ### Mapping Reads and Coverage Depth Calculations
+
+Illumina reads coverage calculations
+
+![Screenshot 2022-12-05 at 9 11 05 PM](https://user-images.githubusercontent.com/116305887/205811582-614cc76f-0497-4408-803f-88500e0538ce.jpg)
 
 Illumina reads mapped in Geneious
 
@@ -374,23 +378,9 @@ Illumina reads mapped in Geneious
 
 ![Screenshot (37)](https://user-images.githubusercontent.com/116305887/205470789-7f83c6c3-08f4-46fc-b521-c93394208e0b.png)
 
-Nanopore reads mapped in Geneious
-
-![Screenshot (34)](https://user-images.githubusercontent.com/116305887/205470795-168c76f0-c476-464e-8f7a-4a8200171ad6.png)
-
-![Screenshot (35)](https://user-images.githubusercontent.com/116305887/205470799-c4aea8bd-2335-46e0-8246-3ac0fa7d2f0f.png)
-
-Illumina reads coverage calculations
-
-![Screenshot 2022-12-05 at 9 11 05 PM](https://user-images.githubusercontent.com/116305887/205811582-614cc76f-0497-4408-803f-88500e0538ce.jpg)
-
-Nanopore reads coverage calculations
-
-![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
-
 ## Step 9: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
-In Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
+In Ubuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl/final_project_MIP280A4
 
 ```
 conda install -c bioconda minimap2
@@ -404,7 +394,7 @@ samtools coverage nanopore_mapped_to_scaffolds_sorted.bam
 ```
 In Termainal:
 
-sftp into server
+sftp into server thoth01.ccmbs.colostate.edu
 ```
 cd final_project_MIP280A4
 cd Paenibacillus_spades_assembly_2
@@ -416,7 +406,17 @@ In Geneious:
 import approx-mapping_new_nanopore_to_scaffold.sam
 Align this file to the first_scaffold
 
-The average coverage depth was 13.1892. The full analysis can be seen in additional_information.md. 
+The average coverage depth was 13.1892X. The full analysis can be seen below. 
+
+Nanopore reads coverage calculations
+
+![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
+
+Nanopore reads mapped in Geneious
+
+![Screenshot (34)](https://user-images.githubusercontent.com/116305887/205470795-168c76f0-c476-464e-8f7a-4a8200171ad6.png)
+
+![Screenshot (35)](https://user-images.githubusercontent.com/116305887/205470799-c4aea8bd-2335-46e0-8246-3ac0fa7d2f0f.png)
 
 ## Step 10: Annotation
 
