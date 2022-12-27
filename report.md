@@ -138,12 +138,12 @@ Bases preceding removed adapters:
   T: 33.6%
   none/other: 0.0%
 ```
-
-The results from the individual reads can be found in additional_information.md.
  
 ## Step 3: Quality Check #2
 
-On Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
+To make sure trimming worked successfully, a second FASTQC report was done to test the read quality. 
+
+On Ubuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl/final_project_MIP280A4
 
 ```
 fastqc Paenibacillus_Illumina_R1_trimmed.fastq
@@ -165,7 +165,18 @@ get Paenibacillus_Illumina_R1_trimmed_fastqc.html
 
 get Paenibacillus_Illumina_R2_trimmed_fastqc.html
 ```
-Trimming the adapters successfully removed the adapters. The specific FASTQC reports can be found in additional_information.md.
+
+### Post-Trimming FASTQC Reports
+
+Illumina R1 Adapter Content
+
+![Screenshot 2022-12-03 at 4 10 22 PM](https://user-images.githubusercontent.com/116305887/205465966-7e8a4cd3-2470-41de-afa1-774e92fce90e.jpg)
+
+Illumina R2 Adapter Content
+
+![Screenshot 2022-12-03 at 4 10 47 PM](https://user-images.githubusercontent.com/116305887/205465978-187eb06f-0ec0-45df-ad66-ff2cd49c4ae0.jpg)
+Trimming the adapters successfully removed the adapters. 
+
 
 ## Step 4: Assembly
 
