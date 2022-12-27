@@ -1,12 +1,12 @@
 # MIP 280A4 Final Project 2022
 
-This report documents the final project I did for MIP 280A4, Microbial Sequence Analysis, in the fall of 2022. I analyzed a <em>Paenibacillus</em> genome with antimicrobial properties that was isolated from soil. I trimmed, assembled, mapped, and annotated this genome. The workflow and results of this project can be found in this file. Packages, figures, and extra data can be found in additional_information.md. These files are written in [Markdown format](https://www.markdownguide.org/basic-syntax/).  
+This report documents the final project I did for Colorado State University's class MIP 280A4, Microbial Sequence Analysis, in the fall of 2022. I analyzed a <em>Paenibacillus</em> genome because this bacteria demonstrated unique morphological, biochemical, and antimicrobial properties but was unable to be identified using 16S sequencing. With Illumina and Nanopore full genome sequencing data, I trimmed, assembled, mapped, and annotated this genome. The workflow, results, packages, and figures of this project can be found in this file. These files are written in [Markdown format](https://www.markdownguide.org/basic-syntax/).  
 
 ## Step 1: Quality Testing
 	
 This genome was sequenced using both Illumina and Nanopore technologies. Before I used this information to assemble the genome, I analyzed the quality of the data. 
 	
-On Ubuntu: (THOTH) /home/pkiehl
+On Ubuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl
 
 ```
 conda activate bio_tools
@@ -25,7 +25,7 @@ On Terminal: /home
 ```
 cd .\Documents\
 ```
-sftp into server
+sftp into server thoth01.cvmbs.colostate.edu
 ```
 cd final_project_MIP280A4
 get Paenibacillus_Illumina_R1_fastqc.html
@@ -33,13 +33,35 @@ get Paenibacillus_Illumina_R2_fastqc.html
 get Paenibacillus_Nanopore_fastqc.html
 ```
 
-Specific data from FASTQC report can be found in additional_information.md. As expected, the nanopore quality was low. Also, the Illumina Universal Adapter sequence was found in the Illumina reads. The next step is to remove those adapters. 
+### Pre-Trimming FASTQC Results
+
+Illumina R1 Quality
+
+![Screenshot 2022-12-03 at 3 46 08 PM](https://user-images.githubusercontent.com/116305887/205465209-b6255dcb-affb-4264-99ec-465605a0fe2d.jpg)
+
+Illumina R2 Quality
+
+![Screenshot 2022-12-03 at 3 46 31 PM](https://user-images.githubusercontent.com/116305887/205465233-2810a8e3-e599-4fc5-b098-93cbaf83c2a7.jpg)
+
+Nanopore Quality
+
+![Screenshot 2022-12-05 at 9 16 43 PM](https://user-images.githubusercontent.com/116305887/205812473-e64bd71d-0c19-4fa3-904c-edfa4d0928bd.jpg)
+
+Illumina R1 Adapter Content Before Trimming
+
+![Screenshot 2022-12-03 at 3 47 47 PM](https://user-images.githubusercontent.com/116305887/205465284-746a7851-ce7c-478a-8e0c-f77e7877b22b.jpg)
+
+Illumina R2 Adapter Content Before Trimming
+
+![Screenshot 2022-12-03 at 3 48 06 PM](https://user-images.githubusercontent.com/116305887/205465295-f4bfc274-0181-499b-afa8-f3a2d25ac747.jpg)
+
+As expected, the Nanopore quality was low, so it will not be trimmed. The Illumina Universal Adapter sequence was found in the Illumina reads. The next step is to remove those adapters. 
 
 ## Step 2: Trim Adapters
 
-The Illumina Universal Adapter sequence is AGATCGGAAGAG.
+The Illumina Universal Adapter sequence is AGATCGGAAGAG, which will be used in cutadapt so they are properly removed from the data. 
 
-On Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
+On Ubuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl/final_project_MIP280A4
 ```
 cutadapt \
    -a AGATCGGAAGAG \
@@ -52,8 +74,8 @@ cutadapt \
    Paenibacillus_Illumina_R2.fastq \
    | tee cutadapt.log
 ```
-Results: 
-
+### Trimming Results: 
+ ```
 === Summary ===
 
 Total read pairs processed:            807,033
@@ -85,6 +107,37 @@ Total written (filtered):    371,924,944 bp (92.2%)
   Read 1:   186,688,646 bp
   
   Read 2:   185,236,298 bp
+  
+  === First read: Adapter 1 ===
+
+Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 302507 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 26.2%
+  C: 20.1%
+  G: 20.4%
+  T: 33.2%
+  none/other: 0.0%
+  
+=== Second read: Adapter 2 ===
+
+Sequence: AGATCGGAAGAG; Type: regular 3'; Length: 12; Trimmed: 288766 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.7%
+  C: 20.0%
+  G: 20.7%
+  T: 33.6%
+  none/other: 0.0%
+```
 
 The results from the individual reads can be found in additional_information.md.
  
