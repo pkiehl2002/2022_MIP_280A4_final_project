@@ -348,21 +348,6 @@ samtools coverage Paenibacillus_Illumina_mapped_to_penny.sorted.bam
 ```
 
 The average coverage depth was 73.322X. 
-
-```
-cd ..
-bowtie2 -x penny_scaffolds_index \
-   -q Paenibacillus_Nanopore.fastq.gz
-   --no-unal \
-   --threads 8 \
-   -S approx-mapping_new_nanopore_to_scaffold.sam 
- 
-samtools view -b approx-mapping_new_nanopore_to_scaffold.sam  > nanopore_mapped_to_scaffolds.bam 
-samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam  > nanopore_mapped_to_scaffolds_sorted.bam
-samtools coverage nanopore_mapped_to_scaffolds_sorted.bam
-```
-
-The average coverage depth was 13.1892X.
    
 The full output as well as Geneious visualization can be seen below. 
 
@@ -392,7 +377,7 @@ samtools view -b approx-mapping_new_nanopore_to_scaffold.sam > nanopore_mapped_t
 samtools sort -T tmp -O 'bam' nanopore_mapped_to_scaffolds.bam > nanopore_mapped_to_scaffolds_sorted.bam
 samtools coverage nanopore_mapped_to_scaffolds_sorted.bam  
 ```
-In Termainal:
+In Terminal:
 
 sftp into server thoth01.ccmbs.colostate.edu
 ```
@@ -420,7 +405,7 @@ Nanopore reads mapped in Geneious
 
 ## Step 10: Annotation
 
-In Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
+In Ubuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
 
 ```
 conda install -c conda-forge -c bioconda bakta
@@ -428,17 +413,214 @@ bakta --db /home/data_for_classes/bakta_database/db scaffolds.fasta
 amrfinder_update --database /home/data_for_classes/bakta_database/db/amrfinderplus-db 
 ```
 
+In Terminal: 
+
+sftp into server thoth01.cvmbs.colostate.edu
+```
+cd final_project_MIP280A4
+cd Paenibacillus_spades_assembly_2
+get scaffolds.gff3
+```
+
 In Geneious: 
-- Import annotation 
-- Export annotations table 
+- Import annotation via scaffolds.gff3
+- Export annotations table from Geneious > Annotations > Export table
 - Import table into text editor
 - sftp into server
 - put file in server
 - wc -l [file]
 
-4,537 lines -1 = 4,536 genes were found in the annotation. The bakta output and annotations in Geneious can be found in additional_information.md.
+4,537 lines -1 = 4,536 genes were found in the annotation. The bakta output and annotations in Geneious can be found below. 
 
- 
+### Geneious Annotation
+
+![Screenshot (40)](https://user-images.githubusercontent.com/116305887/205471844-a0afa4d5-8f2c-4133-ab89-a63d752ed565.png)
+
+![Screenshot (41)](https://user-images.githubusercontent.com/116305887/205471847-65ffa4be-55f5-410d-a38a-436f29a49134.png)
+
+### Bakta Output
+```
+parse genome sequences...
+
+imported: 21
+  
+filtered & revised: 21
+  
+contigs: 21
+  
+
+start annotation...
+
+predict tRNAs...
+
+found: 79
+
+predict tmRNAs...
+
+found: 1
+
+predict rRNAs...
+
+found: 25
+
+predict ncRNAs...
+
+found: 5
+
+predict ncRNA regions...
+
+found: 48
+
+predict CRISPR arrays...
+
+found: 2
+
+predict & annotate CDSs...
+
+predicted: 4385 
+
+discarded spurious: 0
+
+revised translational exceptions: 0
+
+detected IPSs: 1933
+
+found PSCs: 2179
+
+found PSCCs: 163
+
+lookup annotations...
+
+conduct expert systems...
+
+amrfinder: 1
+
+protein sequences: 3
+
+combine annotations and mark hypotheticals...
+
+detect pseudogenes...
+
+pseudogene candidates: 14
+
+found pseudogenes: 10
+
+analyze hypothetical proteins: 618
+
+detected Pfam hits: 72 
+
+calculated proteins statistics
+
+revise special cases...
+
+extract sORF...
+
+potential: 82636
+
+discarded due to overlaps: 68156
+
+discarded spurious: 0
+
+detected IPSs: 1
+
+found PSCs: 0
+
+lookup annotations...
+
+filter and combine annotations...
+
+filtered sORFs: 1
+
+detect gaps...
+
+found: 9
+
+detect oriCs/oriVs...
+
+found: 0
+
+detect oriTs...
+
+found: 0
+
+apply feature overlap filters...
+
+select features and create locus tags...
+
+selected: 4546
+
+genome statistics:
+
+Genome size: 5,050,086 bp
+
+Contigs/replicons: 21
+
+GC: 39.4 %
+
+N50: 5,045,338
+
+N ratio: 0.0 %
+
+coding density: 86.8 %
+
+annotation summary:
+
+tRNAs: 79
+
+tmRNAs: 1
+
+rRNAs: 25
+
+ncRNAs: 5
+
+ncRNA regions: 46
+
+CRISPR arrays: 2
+
+CDSs: 4378
+
+hypotheticals: 611
+
+pseudogenes: 10
+
+signal peptides: 0
+
+sORFs: 1
+
+gaps: 9
+
+oriCs/oriVs: 0
+
+oriTs: 0
+
+export annotation results to: /home/pkiehl/final_project_MIP280A4/Paenibacillus_spades_assembly_2
+	human readable TSV...
+
+GFF3...
+
+INSDC GenBank & EMBL...
+
+genome sequences...
+
+feature nucleotide sequences...
+
+translated CDS sequences...
+
+circular genome plot...
+
+/home/pkiehl/miniconda3/envs/bio_tools/lib/python3.9/site-packages/Bio/SeqUtils/__init__.py:144: BiopythonDeprecationWarning: GC is deprecated; please use gc_fraction instead.
+  
+  warnings.warn(
+	
+  hypothetical TSV...
+	
+  translated hypothetical CDS sequences...
+	
+  machine readable JSON...
+	
+  genome and annotation summary...
+```
+
 ## Step 11: Nanoplot
 
 In Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
