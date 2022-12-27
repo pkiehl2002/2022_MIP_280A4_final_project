@@ -247,6 +247,8 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 Scaffold #1 (lines 55515-55939)
 
 ![Screenshot (43)](https://user-images.githubusercontent.com/116305887/205984055-d2348cdd-537c-4f14-989d-417185209bfd.png)
+![Screenshot 2022-12-27 at 12 18 20 PM](https://user-images.githubusercontent.com/116305887/209712819-75c88d38-d252-47a5-969c-bd7e099f3eca.jpg)
+
 
 Scaffold #1 (lines 54815-55626)
 
