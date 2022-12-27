@@ -653,11 +653,14 @@ Import both files into Geneious and make pairwise alignment using Needleman-Wuns
 
 73.9% pairwise identity for DNA sequence.
 
+These identities reflect the alignment of the bacterial genome to the reference sequence <em>Paenibacillus bovis</em>, although it was expected to have a higher pairwise identity alignemnt given how criticial DNA polymerase I is to the bacteria. 
+
 ### DNA Polymerase I Alignment
 
 BLAST:
 
 ![Screenshot 2022-12-27 at 12 22 33 PM](https://user-images.githubusercontent.com/116305887/209713117-63a6beec-b607-4d34-8f03-06125ce73908.jpg)
+These are results of a BLAST search of the bacteria's DNA polymerase I gene. It is notable that <em>Paenibacillus bovis</em> is not a top result. 
 
 Protein:
 
