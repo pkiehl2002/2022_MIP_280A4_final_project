@@ -198,7 +198,7 @@ grep NODE scaffolds.fasta
 grep NODE contigs.fasta
 ```
 
-The first scaffold is 5,045,338 bases long. 
+The first scaffold is 5,045,338 bases long. The other scaffolds are small enough to indicate that there are no plasmids in this bacteria. 
 
 On Terminal: /home
 
