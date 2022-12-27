@@ -303,13 +303,23 @@ Scaffold #10
 
 ## Step 7: Alignment
 
-Full genome alignment in Geneious
+The assembled genome was aligned against the reference sequence of <em>Paenibacillus bovis</em> using Geneious' full genome alignment tools. 
 
 Import first_scaffold.fasta into Geneious
 
 Align first scaffold from assembly with CP013023 <em>Paenibacillus bovis</em> reference sequence. 
 
-LASTZ alignment has a pairwise identity of 75.6%. Geneious diagrams of the alignments can be found in additional_information.md.
+LASTZ alignment has a pairwise identity of 75.6%. Geneious diagrams of the alignments can be found below.
+
+### Alignment Diagrams
+
+Mauve Diagram
+
+![Screenshot (42)](https://user-images.githubusercontent.com/116305887/205790269-7b3e3243-d42c-4126-a9ec-df7eeb4d651b.png)
+
+LASTZ alignment
+
+![Screenshot (39)](https://user-images.githubusercontent.com/116305887/205471678-eab0b57d-c181-4c16-97ba-04e5f657b821.png)
 
 ## Step 8: Mapping Illumina Reads to Scaffolds and Calculating Coverage Depth
 
