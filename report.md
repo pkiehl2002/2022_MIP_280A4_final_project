@@ -157,7 +157,7 @@ On Terminal: /home
 cd .\Documents\
 ```
 
-sftp into server
+sftp into server thoth01.cvmbs.colostate.edu
 ```
 cd final_project_MIP280A4
 
@@ -205,7 +205,7 @@ On Terminal: /home
 ```
 cd .\Documents\
 ```
-sftp into server
+sftp into server thoth01.cvmbs.colostate.edu
 ```
 cd final_project_MIP280A4
 cd Paenibacillus_spades_assembly_2
@@ -238,7 +238,66 @@ Top result of <em>Paenibacillus bovis</em> with 76.98% match and an E-value of 0
 
 ![Screenshot 2022-12-03 at 4 37 17 PM](https://user-images.githubusercontent.com/116305887/205466736-58c62a57-39aa-4f49-ab2f-b251d458de86.jpg)
 
-<em>Paenibacillus bovis</em> is consistently the top result across scaffolds. <em>Mastacembelus armatus</em> appeared twice in the results. The BLAST results of the remaining scaffolds can be found in additional_information.md. 
+<em>Paenibacillus bovis</em> is consistently the top result across scaffolds. <em>Mastacembelus armatus</em> was a top results twice in the results. The BLAST results of the remaining scaffolds can be found below. 
+
+### BLAST Results
+
+Scaffold #1 (lines 55515-55939)
+
+![Screenshot (43)](https://user-images.githubusercontent.com/116305887/205984055-d2348cdd-537c-4f14-989d-417185209bfd.png)
+
+Scaffold #1 (lines 54815-55626)
+
+![Screenshot (44)](https://user-images.githubusercontent.com/116305887/205984653-234e5231-d6f8-4d80-818a-604ec14eee89.png)
+
+Scaffold #1 (lines 53693-54126)
+
+![Screenshot (45)](https://user-images.githubusercontent.com/116305887/205985496-f87248e8-fe07-495a-bf18-9bd57fda19b5.png)
+
+Scaffold #1 (lines 51400-51814)
+
+![Screenshot (47)](https://user-images.githubusercontent.com/116305887/205987981-64591b7d-1111-4dac-8dab-67b03419542a.png)
+
+DNA polymerase I 
+
+![Screenshot (46)](https://user-images.githubusercontent.com/116305887/205988020-39f0c3bd-e3b0-405e-8556-b554f152c1d8.png)
+
+Scaffold #2
+
+![Screenshot 2022-12-03 at 4 45 20 PM](https://user-images.githubusercontent.com/116305887/205467047-0e9e5f1a-23ea-4728-b15c-2d39e6b52f63.jpg)
+
+Scaffold #3
+
+![Screenshot 2022-12-03 at 4 45 54 PM](https://user-images.githubusercontent.com/116305887/205467063-36859e9e-69a3-4430-bb60-63b40f09ec30.jpg)
+
+Scaffold #4
+
+![Screenshot 2022-12-03 at 4 46 17 PM](https://user-images.githubusercontent.com/116305887/205467070-f908b057-b921-4973-bf2d-06d318627f2f.jpg)
+
+Scaffold #5
+
+![Screenshot 2022-12-03 at 4 46 36 PM](https://user-images.githubusercontent.com/116305887/205467075-a85ea45a-d010-4f05-96e7-fd65c15c030e.jpg)
+
+Scaffold #6
+
+![Screenshot 2022-12-03 at 4 46 56 PM](https://user-images.githubusercontent.com/116305887/205467088-a2e9621d-2267-401e-9654-0153b0df1757.jpg)
+
+Scaffold #7
+
+![Screenshot 2022-12-03 at 4 49 22 PM](https://user-images.githubusercontent.com/116305887/205467127-17e253e9-a239-45e6-9fea-bc588ad7e896.jpg)
+
+Scaffold #8
+
+![Screenshot 2022-12-03 at 4 50 38 PM](https://user-images.githubusercontent.com/116305887/205467146-7d1d2a87-0221-4841-96b6-6ce8f8db285a.jpg)
+
+Scaffold #9
+
+![Screenshot 2022-12-03 at 4 51 13 PM](https://user-images.githubusercontent.com/116305887/205467157-01a90dd6-b89c-4612-b049-c03b09d3bcdd.jpg)
+
+Scaffold #10
+
+![Screenshot 2022-12-03 at 4 51 50 PM](https://user-images.githubusercontent.com/116305887/205467170-95f8b7e2-1e3e-4eb7-9221-23a579ffd4a2.jpg)
+
 
 ## Step 7: Alignment
 
