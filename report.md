@@ -347,29 +347,7 @@ samtools sort -T tmp -O 'bam' Paenibacillus_Illumina_mapped_to_penny_scaffolds.b
 samtools coverage Paenibacillus_Illumina_mapped_to_penny.sorted.bam 
 ```
 
-The average coverage depth was 73.322X. The full analysis can be seen below. 
-
-### Mapping Reads and Coverage Depth Calculations
-
-Illumina reads mapped in Geneious
-
-![Screenshot (36)](https://user-images.githubusercontent.com/116305887/205470784-33addd2d-95b2-4510-bbf4-75a73a1f7116.png)
-
-![Screenshot (37)](https://user-images.githubusercontent.com/116305887/205470789-7f83c6c3-08f4-46fc-b521-c93394208e0b.png)
-
-Nanopore reads mapped in Geneious
-
-![Screenshot (34)](https://user-images.githubusercontent.com/116305887/205470795-168c76f0-c476-464e-8f7a-4a8200171ad6.png)
-
-![Screenshot (35)](https://user-images.githubusercontent.com/116305887/205470799-c4aea8bd-2335-46e0-8246-3ac0fa7d2f0f.png)
-
-Illumina reads coverage calculations
-
-![Screenshot 2022-12-05 at 9 11 05 PM](https://user-images.githubusercontent.com/116305887/205811582-614cc76f-0497-4408-803f-88500e0538ce.jpg)
-
-Nanopore reads coverage calculations
-
-![Screenshot 2022-12-01 at 6 37 21 PM](https://user-images.githubusercontent.com/116305887/205195050-dc56681a-2b58-41a1-ac37-a7e47429ca29.jpg)
+The average coverage depth was 73.322X. The full analysis can be seen in additional_information.md. 
 
 ## Step 9: Mapping Nanopore Reads to Scaffolds and Calculating Coverage Depth
 
