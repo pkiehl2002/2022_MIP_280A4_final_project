@@ -260,10 +260,6 @@ Scaffold #1 (lines 51400-51814)
 
 ![Screenshot 2022-12-27 at 12 22 05 PM](https://user-images.githubusercontent.com/116305887/209713081-e5b2b74d-083e-4fe2-adaa-a41f8025819a.jpg)
 
-DNA polymerase I 
-
-![Screenshot 2022-12-27 at 12 22 33 PM](https://user-images.githubusercontent.com/116305887/209713117-63a6beec-b607-4d34-8f03-06125ce73908.jpg)
-
 Scaffold #2
 
 ![Screenshot 2022-12-03 at 4 45 20 PM](https://user-images.githubusercontent.com/116305887/205467047-0e9e5f1a-23ea-4728-b15c-2d39e6b52f63.jpg)
@@ -623,7 +619,7 @@ circular genome plot...
 
 ## Step 11: Nanoplot
 
-In Ubuntu: (THOTH) /home/pkiehl/final_project_MIP280A4
+In Ubuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl/final_project_MIP280A4
 
 ```
 conda install -c bioconda nanoplot
@@ -632,7 +628,7 @@ NanoPlot -t 8 --fastq Paenibacillus_Nanopore.fastq.gz --plots
 
 ## Step 12: Assess Annotation
 
-In Unbuntu: (THOTH) /home/pkiehl/final_project_MIP280A4/spades_assembly_2
+In Unbuntu: (THOTH server: thoth01.cvmbs.colostate.edu) /home/pkiehl/final_project_MIP280A4/spades_assembly_2
 
 ```
 singularity shell /home/data_for_classes/singularity_images/busco-5.4.3--pyhdfd78af_0
@@ -656,3 +652,16 @@ Import both files into Geneious and make pairwise alignment using Needleman-Wuns
 81.2% pairwise identity and 90.5% pairwise positive for protein sequence. 
 
 73.9% pairwise identity for DNA sequence.
+
+### DNA Polymerase I Alignment
+
+BLAST:
+
+![Screenshot 2022-12-27 at 12 22 33 PM](https://user-images.githubusercontent.com/116305887/209713117-63a6beec-b607-4d34-8f03-06125ce73908.jpg)
+
+Protein:
+
+![Screenshot (48)](https://user-images.githubusercontent.com/116305887/206058449-21e3b002-ec63-4ff5-a475-3a1af0cb5d3c.png)
+
+DNA:
+![Screenshot (49)](https://user-images.githubusercontent.com/116305887/206055085-f2d9c6bc-7548-4d4e-9608-aba9a69b5ffb.png)
